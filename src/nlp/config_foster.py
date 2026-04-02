@@ -38,3 +38,7 @@ PROCESSED_PATH: Path = DATA_PATH / "processed"
 # Custom file names for your project
 RAW_JSON_PATH: Path = RAW_PATH / "pokemon_raw.json"
 PROCESSED_CSV_PATH: Path = PROCESSED_PATH / "pokemon_processed.csv"
+
+# Additional output files
+SUMMARY_CSV_PATH: Path = PROCESSED_PATH / "pokemon_summary.csv"
+TYPE_COUNTS_CSV_PATH: Path = PROCESSED_PATH / "pokemon_type_counts.csv"

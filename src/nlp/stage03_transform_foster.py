@@ -21,6 +21,8 @@ from typing import Any
 
 import polars as pl
 
+from nlp.config_foster import SUMMARY_CSV_PATH, TYPE_COUNTS_CSV_PATH
+
 
 def run_transform(
     json_data: dict[str, list[dict[str, Any]]],
@@ -56,5 +58,53 @@ def run_transform(
         LOG.info("Transformation complete.")
         LOG.info(f"DataFrame preview:\n{df.head()}")
         LOG.info("Sink: Polars DataFrame created")
+
+    # ===============
+    # NEW: ANALYSIS
+    # ===============
+
+    # Summary statistics
+    summary = df.select(
+        [
+            pl.count().alias("total_pokemon"),
+            pl.col("height").mean().alias("avg_height"),
+            pl.col("weight").mean().alias("avg_weight"),
+        ]
+    )
+
+    # Most common Pokémon types
+    type_counts = (
+        df.select(pl.col("types")).to_series().str.split(", ").explode().value_counts()
+    )
+
+    if LOG:
+        LOG.info("Transformation complete.")
+        LOG.info(f"DataFrame preview:\n{df.head()}")
+
+        # Log summary results
+        LOG.info("Summary Statistics:")
+        LOG.info(f"\n{summary}")
+
+        LOG.info("Most Common Pokémon Types:")
+        LOG.info(f"\n{type_counts}")
+
+        LOG.info("Sink: Polars DataFrame created")
+
+    # ============================================================
+    # SAVE ADDITIONAL OUTPUTS
+    # ============================================================
+
+    # Ensure directories exist
+    SUMMARY_CSV_PATH.parent.mkdir(parents=True, exist_ok=True)
+
+    # Save summary
+    summary.write_csv(SUMMARY_CSV_PATH)
+
+    # Save type counts (already a DataFrame)
+    type_counts.write_csv(TYPE_COUNTS_CSV_PATH)
+
+    if LOG:
+        LOG.info(f"Summary saved to {SUMMARY_CSV_PATH}")
+        LOG.info(f"Type counts saved to {TYPE_COUNTS_CSV_PATH}")
 
     return df

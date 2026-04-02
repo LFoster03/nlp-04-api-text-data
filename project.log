@@ -327,3 +327,99 @@ shape: (5, 7)
 2026-04-01 14:01:33 | INFO | CI | ========================
 2026-04-01 14:01:33 | INFO | CI | Pipeline executed successfully!
 2026-04-01 14:01:33 | INFO | CI | ========================
+2026-04-02 10:22:57 | INFO | CI | === RUN START ===
+2026-04-02 10:22:57 | INFO | CI | project=MODULE 4: EVTL PIPELINE
+2026-04-02 10:22:57 | INFO | CI | repo_dir=nlp-04-api-text-data
+2026-04-02 10:22:57 | INFO | CI | python=3.14.3
+2026-04-02 10:22:57 | INFO | CI | os=Windows 11
+2026-04-02 10:22:57 | INFO | CI | shell=powershell
+2026-04-02 10:22:57 | INFO | CI | cwd=.
+2026-04-02 10:22:57 | INFO | CI | github_actions=False
+2026-04-02 10:22:57 | INFO | CI | START PIPELINE
+2026-04-02 10:22:57 | INFO | CI | ROOT_PATH = .
+2026-04-02 10:22:57 | INFO | CI | DATA_PATH = data
+2026-04-02 10:22:57 | INFO | CI | RAW_PATH = data\raw
+2026-04-02 10:22:57 | INFO | CI | PROCESSED_PATH = data\processed
+2026-04-02 10:22:57 | INFO | CI | ========================
+2026-04-02 10:22:57 | INFO | CI | STAGE 01: EXTRACT starting...
+2026-04-02 10:22:57 | INFO | CI | ========================
+2026-04-02 10:27:22 | INFO | CI | Extracted 1350 Pokémon
+2026-04-02 10:27:22 | INFO | CI | Raw JSON saved to C:\Repos\nlp-04-api-text-data\data\raw\pokemon_raw.json
+2026-04-02 10:27:22 | INFO | CI | ========================
+2026-04-02 10:27:22 | INFO | CI | STAGE 02: VALIDATE starting...
+2026-04-02 10:27:22 | INFO | CI | ========================
+2026-04-02 10:27:22 | INFO | CI | Top-level keys: ['results']
+2026-04-02 10:27:22 | INFO | CI | Number of Pokémon records: 1350
+2026-04-02 10:27:22 | INFO | CI | Validation complete. All records contain required fields.
+2026-04-02 10:27:22 | INFO | CI | ========================
+2026-04-02 10:27:22 | INFO | CI | STAGE 03: TRANSFORM starting...
+2026-04-02 10:27:22 | INFO | CI | ========================
+2026-04-02 10:27:22 | INFO | CI | Transformation complete.
+2026-04-02 10:27:22 | INFO | CI | DataFrame preview:
+shape: (5, 7)
+┌────────────┬─────┬─────────────────────────────────┬───────────────┬────────┬────────┬─────────────┐
+│ name       ┆ id  ┆ url                             ┆ types         ┆ height ┆ weight ┆ name_length │
+│ ---        ┆ --- ┆ ---                             ┆ ---           ┆ ---    ┆ ---    ┆ ---         │
+│ str        ┆ i64 ┆ str                             ┆ str           ┆ i64    ┆ i64    ┆ u32         │
+╞════════════╪═════╪═════════════════════════════════╪═══════════════╪════════╪════════╪═════════════╡
+│ bulbasaur  ┆ 1   ┆ https://pokeapi.co/api/v2/poke… ┆ grass, poison ┆ 7      ┆ 69     ┆ 9           │
+│ ivysaur    ┆ 2   ┆ https://pokeapi.co/api/v2/poke… ┆ grass, poison ┆ 10     ┆ 130    ┆ 7           │
+│ venusaur   ┆ 3   ┆ https://pokeapi.co/api/v2/poke… ┆ grass, poison ┆ 20     ┆ 1000   ┆ 8           │
+│ charmander ┆ 4   ┆ https://pokeapi.co/api/v2/poke… ┆ fire          ┆ 6      ┆ 85     ┆ 10          │
+│ charmeleon ┆ 5   ┆ https://pokeapi.co/api/v2/poke… ┆ fire          ┆ 11     ┆ 190    ┆ 10          │
+└────────────┴─────┴─────────────────────────────────┴───────────────┴────────┴────────┴─────────────┘
+2026-04-02 10:27:22 | INFO | CI | Sink: Polars DataFrame created
+2026-04-02 10:27:22 | INFO | CI | Transformation complete.
+2026-04-02 10:27:22 | INFO | CI | DataFrame preview:
+shape: (5, 7)
+┌────────────┬─────┬─────────────────────────────────┬───────────────┬────────┬────────┬─────────────┐
+│ name       ┆ id  ┆ url                             ┆ types         ┆ height ┆ weight ┆ name_length │
+│ ---        ┆ --- ┆ ---                             ┆ ---           ┆ ---    ┆ ---    ┆ ---         │
+│ str        ┆ i64 ┆ str                             ┆ str           ┆ i64    ┆ i64    ┆ u32         │
+╞════════════╪═════╪═════════════════════════════════╪═══════════════╪════════╪════════╪═════════════╡
+│ bulbasaur  ┆ 1   ┆ https://pokeapi.co/api/v2/poke… ┆ grass, poison ┆ 7      ┆ 69     ┆ 9           │
+│ ivysaur    ┆ 2   ┆ https://pokeapi.co/api/v2/poke… ┆ grass, poison ┆ 10     ┆ 130    ┆ 7           │
+│ venusaur   ┆ 3   ┆ https://pokeapi.co/api/v2/poke… ┆ grass, poison ┆ 20     ┆ 1000   ┆ 8           │
+│ charmander ┆ 4   ┆ https://pokeapi.co/api/v2/poke… ┆ fire          ┆ 6      ┆ 85     ┆ 10          │
+│ charmeleon ┆ 5   ┆ https://pokeapi.co/api/v2/poke… ┆ fire          ┆ 11     ┆ 190    ┆ 10          │
+└────────────┴─────┴─────────────────────────────────┴───────────────┴────────┴────────┴─────────────┘
+2026-04-02 10:27:22 | INFO | CI | Summary Statistics:
+2026-04-02 10:27:22 | INFO | CI | 
+shape: (1, 3)
+┌───────────────┬────────────┬────────────┐
+│ total_pokemon ┆ avg_height ┆ avg_weight │
+│ ---           ┆ ---        ┆ ---        │
+│ u32           ┆ f64        ┆ f64        │
+╞═══════════════╪════════════╪════════════╡
+│ 1350          ┆ 20.452593  ┆ 991.719259 │
+└───────────────┴────────────┴────────────┘
+2026-04-02 10:27:22 | INFO | CI | Most Common Pokémon Types:
+2026-04-02 10:27:22 | INFO | CI | 
+shape: (18, 2)
+┌──────────┬───────┐
+│ types    ┆ count │
+│ ---      ┆ ---   │
+│ str      ┆ u32   │
+╞══════════╪═══════╡
+│ flying   ┆ 154   │
+│ psychic  ┆ 141   │
+│ fighting ┆ 109   │
+│ water    ┆ 192   │
+│ dragon   ┆ 117   │
+│ …        ┆ …     │
+│ ground   ┆ 96    │
+│ grass    ┆ 156   │
+│ bug      ┆ 106   │
+│ poison   ┆ 106   │
+│ ice      ┆ 69    │
+└──────────┴───────┘
+2026-04-02 10:27:22 | INFO | CI | Sink: Polars DataFrame created
+2026-04-02 10:27:22 | INFO | CI | Summary saved to C:\Repos\nlp-04-api-text-data\data\processed\pokemon_summary.csv
+2026-04-02 10:27:22 | INFO | CI | Type counts saved to C:\Repos\nlp-04-api-text-data\data\processed\pokemon_type_counts.csv
+2026-04-02 10:27:22 | INFO | CI | ========================
+2026-04-02 10:27:22 | INFO | CI | STAGE 04: LOAD starting...
+2026-04-02 10:27:22 | INFO | CI | ========================
+2026-04-02 10:27:22 | INFO | CI | SINK PATH = data\processed\pokemon_processed.csv
+2026-04-02 10:27:22 | INFO | CI | ========================
+2026-04-02 10:27:22 | INFO | CI | Pipeline executed successfully!
+2026-04-02 10:27:22 | INFO | CI | ========================

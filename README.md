@@ -133,6 +133,34 @@ git add -A
 git commit -m "update"
 git push -u origin main
 ```
+## Modifications
+- Copy src files to work on examples.
+- Use a different data source: https://pokeapi.co/api/v2/pokemon?limit=20
+- First, I pulled the first 20 pokemon but then wanted to add more characteristics.
+
+### Modifications with New Data
+- Updated the transform stage to include new fields: id, types, height, weight.
+- Combined multiple Pokémon types into a comma-separated string in the DataFrame.
+- Added a derived field: name_length (length of Pokémon names).
+
+### Observations
+- Validated JSON is successfully transformed into a Polars DataFrame with additional fields.
+- CSV output contains enriched Pokémon data suitable for analysis.
+
+### Additional Analysis
+
+**To extend the pipeline, summary statistics were computed from the transformed dataset.***
+
+- Calculated average height and weight of Pokémon
+- Counted total number of Pokémon
+- Analyzed frequency of Pokémon types
+
+*This demonstrates applying the pipeline to answer analytical questions beyond data preparation.*
+
+### Observations
+- Out of the 1350 Pokemon, the average height is 20in and average weight is 991lb.
+- It also counted the types, the most frequent type is water with 192 and the least frequent is ice with 69.
+
 
 </details>
 
