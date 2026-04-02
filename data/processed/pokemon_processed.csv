@@ -1,21 +1,1351 @@
-name,url,name_length
-bulbasaur,https://pokeapi.co/api/v2/pokemon/1/,9
-ivysaur,https://pokeapi.co/api/v2/pokemon/2/,7
-venusaur,https://pokeapi.co/api/v2/pokemon/3/,8
-charmander,https://pokeapi.co/api/v2/pokemon/4/,10
-charmeleon,https://pokeapi.co/api/v2/pokemon/5/,10
-charizard,https://pokeapi.co/api/v2/pokemon/6/,9
-squirtle,https://pokeapi.co/api/v2/pokemon/7/,8
-wartortle,https://pokeapi.co/api/v2/pokemon/8/,9
-blastoise,https://pokeapi.co/api/v2/pokemon/9/,9
-caterpie,https://pokeapi.co/api/v2/pokemon/10/,8
-metapod,https://pokeapi.co/api/v2/pokemon/11/,7
-butterfree,https://pokeapi.co/api/v2/pokemon/12/,10
-weedle,https://pokeapi.co/api/v2/pokemon/13/,6
-kakuna,https://pokeapi.co/api/v2/pokemon/14/,6
-beedrill,https://pokeapi.co/api/v2/pokemon/15/,8
-pidgey,https://pokeapi.co/api/v2/pokemon/16/,6
-pidgeotto,https://pokeapi.co/api/v2/pokemon/17/,9
-pidgeot,https://pokeapi.co/api/v2/pokemon/18/,7
-rattata,https://pokeapi.co/api/v2/pokemon/19/,7
-raticate,https://pokeapi.co/api/v2/pokemon/20/,8
+name,id,url,types,height,weight,name_length
+bulbasaur,1,https://pokeapi.co/api/v2/pokemon/1/,"grass, poison",7,69,9
+ivysaur,2,https://pokeapi.co/api/v2/pokemon/2/,"grass, poison",10,130,7
+venusaur,3,https://pokeapi.co/api/v2/pokemon/3/,"grass, poison",20,1000,8
+charmander,4,https://pokeapi.co/api/v2/pokemon/4/,fire,6,85,10
+charmeleon,5,https://pokeapi.co/api/v2/pokemon/5/,fire,11,190,10
+charizard,6,https://pokeapi.co/api/v2/pokemon/6/,"fire, flying",17,905,9
+squirtle,7,https://pokeapi.co/api/v2/pokemon/7/,water,5,90,8
+wartortle,8,https://pokeapi.co/api/v2/pokemon/8/,water,10,225,9
+blastoise,9,https://pokeapi.co/api/v2/pokemon/9/,water,16,855,9
+caterpie,10,https://pokeapi.co/api/v2/pokemon/10/,bug,3,29,8
+metapod,11,https://pokeapi.co/api/v2/pokemon/11/,bug,7,99,7
+butterfree,12,https://pokeapi.co/api/v2/pokemon/12/,"bug, flying",11,320,10
+weedle,13,https://pokeapi.co/api/v2/pokemon/13/,"bug, poison",3,32,6
+kakuna,14,https://pokeapi.co/api/v2/pokemon/14/,"bug, poison",6,100,6
+beedrill,15,https://pokeapi.co/api/v2/pokemon/15/,"bug, poison",10,295,8
+pidgey,16,https://pokeapi.co/api/v2/pokemon/16/,"normal, flying",3,18,6
+pidgeotto,17,https://pokeapi.co/api/v2/pokemon/17/,"normal, flying",11,300,9
+pidgeot,18,https://pokeapi.co/api/v2/pokemon/18/,"normal, flying",15,395,7
+rattata,19,https://pokeapi.co/api/v2/pokemon/19/,normal,3,35,7
+raticate,20,https://pokeapi.co/api/v2/pokemon/20/,normal,7,185,8
+spearow,21,https://pokeapi.co/api/v2/pokemon/21/,"normal, flying",3,20,7
+fearow,22,https://pokeapi.co/api/v2/pokemon/22/,"normal, flying",12,380,6
+ekans,23,https://pokeapi.co/api/v2/pokemon/23/,poison,20,69,5
+arbok,24,https://pokeapi.co/api/v2/pokemon/24/,poison,35,650,5
+pikachu,25,https://pokeapi.co/api/v2/pokemon/25/,electric,4,60,7
+raichu,26,https://pokeapi.co/api/v2/pokemon/26/,electric,8,300,6
+sandshrew,27,https://pokeapi.co/api/v2/pokemon/27/,ground,6,120,9
+sandslash,28,https://pokeapi.co/api/v2/pokemon/28/,ground,10,295,9
+nidoran-f,29,https://pokeapi.co/api/v2/pokemon/29/,poison,4,70,9
+nidorina,30,https://pokeapi.co/api/v2/pokemon/30/,poison,8,200,8
+nidoqueen,31,https://pokeapi.co/api/v2/pokemon/31/,"poison, ground",13,600,9
+nidoran-m,32,https://pokeapi.co/api/v2/pokemon/32/,poison,5,90,9
+nidorino,33,https://pokeapi.co/api/v2/pokemon/33/,poison,9,195,8
+nidoking,34,https://pokeapi.co/api/v2/pokemon/34/,"poison, ground",14,620,8
+clefairy,35,https://pokeapi.co/api/v2/pokemon/35/,fairy,6,75,8
+clefable,36,https://pokeapi.co/api/v2/pokemon/36/,fairy,13,400,8
+vulpix,37,https://pokeapi.co/api/v2/pokemon/37/,fire,6,99,6
+ninetales,38,https://pokeapi.co/api/v2/pokemon/38/,fire,11,199,9
+jigglypuff,39,https://pokeapi.co/api/v2/pokemon/39/,"normal, fairy",5,55,10
+wigglytuff,40,https://pokeapi.co/api/v2/pokemon/40/,"normal, fairy",10,120,10
+zubat,41,https://pokeapi.co/api/v2/pokemon/41/,"poison, flying",8,75,5
+golbat,42,https://pokeapi.co/api/v2/pokemon/42/,"poison, flying",16,550,6
+oddish,43,https://pokeapi.co/api/v2/pokemon/43/,"grass, poison",5,54,6
+gloom,44,https://pokeapi.co/api/v2/pokemon/44/,"grass, poison",8,86,5
+vileplume,45,https://pokeapi.co/api/v2/pokemon/45/,"grass, poison",12,186,9
+paras,46,https://pokeapi.co/api/v2/pokemon/46/,"bug, grass",3,54,5
+parasect,47,https://pokeapi.co/api/v2/pokemon/47/,"bug, grass",10,295,8
+venonat,48,https://pokeapi.co/api/v2/pokemon/48/,"bug, poison",10,300,7
+venomoth,49,https://pokeapi.co/api/v2/pokemon/49/,"bug, poison",15,125,8
+diglett,50,https://pokeapi.co/api/v2/pokemon/50/,ground,2,8,7
+dugtrio,51,https://pokeapi.co/api/v2/pokemon/51/,ground,7,333,7
+meowth,52,https://pokeapi.co/api/v2/pokemon/52/,normal,4,42,6
+persian,53,https://pokeapi.co/api/v2/pokemon/53/,normal,10,320,7
+psyduck,54,https://pokeapi.co/api/v2/pokemon/54/,water,8,196,7
+golduck,55,https://pokeapi.co/api/v2/pokemon/55/,water,17,766,7
+mankey,56,https://pokeapi.co/api/v2/pokemon/56/,fighting,5,280,6
+primeape,57,https://pokeapi.co/api/v2/pokemon/57/,fighting,10,320,8
+growlithe,58,https://pokeapi.co/api/v2/pokemon/58/,fire,7,190,9
+arcanine,59,https://pokeapi.co/api/v2/pokemon/59/,fire,19,1550,8
+poliwag,60,https://pokeapi.co/api/v2/pokemon/60/,water,6,124,7
+poliwhirl,61,https://pokeapi.co/api/v2/pokemon/61/,water,10,200,9
+poliwrath,62,https://pokeapi.co/api/v2/pokemon/62/,"water, fighting",13,540,9
+abra,63,https://pokeapi.co/api/v2/pokemon/63/,psychic,9,195,4
+kadabra,64,https://pokeapi.co/api/v2/pokemon/64/,psychic,13,565,7
+alakazam,65,https://pokeapi.co/api/v2/pokemon/65/,psychic,15,480,8
+machop,66,https://pokeapi.co/api/v2/pokemon/66/,fighting,8,195,6
+machoke,67,https://pokeapi.co/api/v2/pokemon/67/,fighting,15,705,7
+machamp,68,https://pokeapi.co/api/v2/pokemon/68/,fighting,16,1300,7
+bellsprout,69,https://pokeapi.co/api/v2/pokemon/69/,"grass, poison",7,40,10
+weepinbell,70,https://pokeapi.co/api/v2/pokemon/70/,"grass, poison",10,64,10
+victreebel,71,https://pokeapi.co/api/v2/pokemon/71/,"grass, poison",17,155,10
+tentacool,72,https://pokeapi.co/api/v2/pokemon/72/,"water, poison",9,455,9
+tentacruel,73,https://pokeapi.co/api/v2/pokemon/73/,"water, poison",16,550,10
+geodude,74,https://pokeapi.co/api/v2/pokemon/74/,"rock, ground",4,200,7
+graveler,75,https://pokeapi.co/api/v2/pokemon/75/,"rock, ground",10,1050,8
+golem,76,https://pokeapi.co/api/v2/pokemon/76/,"rock, ground",14,3000,5
+ponyta,77,https://pokeapi.co/api/v2/pokemon/77/,fire,10,300,6
+rapidash,78,https://pokeapi.co/api/v2/pokemon/78/,fire,17,950,8
+slowpoke,79,https://pokeapi.co/api/v2/pokemon/79/,"water, psychic",12,360,8
+slowbro,80,https://pokeapi.co/api/v2/pokemon/80/,"water, psychic",16,785,7
+magnemite,81,https://pokeapi.co/api/v2/pokemon/81/,"electric, steel",3,60,9
+magneton,82,https://pokeapi.co/api/v2/pokemon/82/,"electric, steel",10,600,8
+farfetchd,83,https://pokeapi.co/api/v2/pokemon/83/,"normal, flying",8,150,9
+doduo,84,https://pokeapi.co/api/v2/pokemon/84/,"normal, flying",14,392,5
+dodrio,85,https://pokeapi.co/api/v2/pokemon/85/,"normal, flying",18,852,6
+seel,86,https://pokeapi.co/api/v2/pokemon/86/,water,11,900,4
+dewgong,87,https://pokeapi.co/api/v2/pokemon/87/,"water, ice",17,1200,7
+grimer,88,https://pokeapi.co/api/v2/pokemon/88/,poison,9,300,6
+muk,89,https://pokeapi.co/api/v2/pokemon/89/,poison,12,300,3
+shellder,90,https://pokeapi.co/api/v2/pokemon/90/,water,3,40,8
+cloyster,91,https://pokeapi.co/api/v2/pokemon/91/,"water, ice",15,1325,8
+gastly,92,https://pokeapi.co/api/v2/pokemon/92/,"ghost, poison",13,1,6
+haunter,93,https://pokeapi.co/api/v2/pokemon/93/,"ghost, poison",16,1,7
+gengar,94,https://pokeapi.co/api/v2/pokemon/94/,"ghost, poison",15,405,6
+onix,95,https://pokeapi.co/api/v2/pokemon/95/,"rock, ground",88,2100,4
+drowzee,96,https://pokeapi.co/api/v2/pokemon/96/,psychic,10,324,7
+hypno,97,https://pokeapi.co/api/v2/pokemon/97/,psychic,16,756,5
+krabby,98,https://pokeapi.co/api/v2/pokemon/98/,water,4,65,6
+kingler,99,https://pokeapi.co/api/v2/pokemon/99/,water,13,600,7
+voltorb,100,https://pokeapi.co/api/v2/pokemon/100/,electric,5,104,7
+electrode,101,https://pokeapi.co/api/v2/pokemon/101/,electric,12,666,9
+exeggcute,102,https://pokeapi.co/api/v2/pokemon/102/,"grass, psychic",4,25,9
+exeggutor,103,https://pokeapi.co/api/v2/pokemon/103/,"grass, psychic",20,1200,9
+cubone,104,https://pokeapi.co/api/v2/pokemon/104/,ground,4,65,6
+marowak,105,https://pokeapi.co/api/v2/pokemon/105/,ground,10,450,7
+hitmonlee,106,https://pokeapi.co/api/v2/pokemon/106/,fighting,15,498,9
+hitmonchan,107,https://pokeapi.co/api/v2/pokemon/107/,fighting,14,502,10
+lickitung,108,https://pokeapi.co/api/v2/pokemon/108/,normal,12,655,9
+koffing,109,https://pokeapi.co/api/v2/pokemon/109/,poison,6,10,7
+weezing,110,https://pokeapi.co/api/v2/pokemon/110/,poison,12,95,7
+rhyhorn,111,https://pokeapi.co/api/v2/pokemon/111/,"ground, rock",10,1150,7
+rhydon,112,https://pokeapi.co/api/v2/pokemon/112/,"ground, rock",19,1200,6
+chansey,113,https://pokeapi.co/api/v2/pokemon/113/,normal,11,346,7
+tangela,114,https://pokeapi.co/api/v2/pokemon/114/,grass,10,350,7
+kangaskhan,115,https://pokeapi.co/api/v2/pokemon/115/,normal,22,800,10
+horsea,116,https://pokeapi.co/api/v2/pokemon/116/,water,4,80,6
+seadra,117,https://pokeapi.co/api/v2/pokemon/117/,water,12,250,6
+goldeen,118,https://pokeapi.co/api/v2/pokemon/118/,water,6,150,7
+seaking,119,https://pokeapi.co/api/v2/pokemon/119/,water,13,390,7
+staryu,120,https://pokeapi.co/api/v2/pokemon/120/,water,8,345,6
+starmie,121,https://pokeapi.co/api/v2/pokemon/121/,"water, psychic",11,800,7
+mr-mime,122,https://pokeapi.co/api/v2/pokemon/122/,"psychic, fairy",13,545,7
+scyther,123,https://pokeapi.co/api/v2/pokemon/123/,"bug, flying",15,560,7
+jynx,124,https://pokeapi.co/api/v2/pokemon/124/,"ice, psychic",14,406,4
+electabuzz,125,https://pokeapi.co/api/v2/pokemon/125/,electric,11,300,10
+magmar,126,https://pokeapi.co/api/v2/pokemon/126/,fire,13,445,6
+pinsir,127,https://pokeapi.co/api/v2/pokemon/127/,bug,15,550,6
+tauros,128,https://pokeapi.co/api/v2/pokemon/128/,normal,14,884,6
+magikarp,129,https://pokeapi.co/api/v2/pokemon/129/,water,9,100,8
+gyarados,130,https://pokeapi.co/api/v2/pokemon/130/,"water, flying",65,2350,8
+lapras,131,https://pokeapi.co/api/v2/pokemon/131/,"water, ice",25,2200,6
+ditto,132,https://pokeapi.co/api/v2/pokemon/132/,normal,3,40,5
+eevee,133,https://pokeapi.co/api/v2/pokemon/133/,normal,3,65,5
+vaporeon,134,https://pokeapi.co/api/v2/pokemon/134/,water,10,290,8
+jolteon,135,https://pokeapi.co/api/v2/pokemon/135/,electric,8,245,7
+flareon,136,https://pokeapi.co/api/v2/pokemon/136/,fire,9,250,7
+porygon,137,https://pokeapi.co/api/v2/pokemon/137/,normal,8,365,7
+omanyte,138,https://pokeapi.co/api/v2/pokemon/138/,"rock, water",4,75,7
+omastar,139,https://pokeapi.co/api/v2/pokemon/139/,"rock, water",10,350,7
+kabuto,140,https://pokeapi.co/api/v2/pokemon/140/,"rock, water",5,115,6
+kabutops,141,https://pokeapi.co/api/v2/pokemon/141/,"rock, water",13,405,8
+aerodactyl,142,https://pokeapi.co/api/v2/pokemon/142/,"rock, flying",18,590,10
+snorlax,143,https://pokeapi.co/api/v2/pokemon/143/,normal,21,4600,7
+articuno,144,https://pokeapi.co/api/v2/pokemon/144/,"ice, flying",17,554,8
+zapdos,145,https://pokeapi.co/api/v2/pokemon/145/,"electric, flying",16,526,6
+moltres,146,https://pokeapi.co/api/v2/pokemon/146/,"fire, flying",20,600,7
+dratini,147,https://pokeapi.co/api/v2/pokemon/147/,dragon,18,33,7
+dragonair,148,https://pokeapi.co/api/v2/pokemon/148/,dragon,40,165,9
+dragonite,149,https://pokeapi.co/api/v2/pokemon/149/,"dragon, flying",22,2100,9
+mewtwo,150,https://pokeapi.co/api/v2/pokemon/150/,psychic,20,1220,6
+mew,151,https://pokeapi.co/api/v2/pokemon/151/,psychic,4,40,3
+chikorita,152,https://pokeapi.co/api/v2/pokemon/152/,grass,9,64,9
+bayleef,153,https://pokeapi.co/api/v2/pokemon/153/,grass,12,158,7
+meganium,154,https://pokeapi.co/api/v2/pokemon/154/,grass,18,1005,8
+cyndaquil,155,https://pokeapi.co/api/v2/pokemon/155/,fire,5,79,9
+quilava,156,https://pokeapi.co/api/v2/pokemon/156/,fire,9,190,7
+typhlosion,157,https://pokeapi.co/api/v2/pokemon/157/,fire,17,795,10
+totodile,158,https://pokeapi.co/api/v2/pokemon/158/,water,6,95,8
+croconaw,159,https://pokeapi.co/api/v2/pokemon/159/,water,11,250,8
+feraligatr,160,https://pokeapi.co/api/v2/pokemon/160/,water,23,888,10
+sentret,161,https://pokeapi.co/api/v2/pokemon/161/,normal,8,60,7
+furret,162,https://pokeapi.co/api/v2/pokemon/162/,normal,18,325,6
+hoothoot,163,https://pokeapi.co/api/v2/pokemon/163/,"normal, flying",7,212,8
+noctowl,164,https://pokeapi.co/api/v2/pokemon/164/,"normal, flying",16,408,7
+ledyba,165,https://pokeapi.co/api/v2/pokemon/165/,"bug, flying",10,108,6
+ledian,166,https://pokeapi.co/api/v2/pokemon/166/,"bug, flying",14,356,6
+spinarak,167,https://pokeapi.co/api/v2/pokemon/167/,"bug, poison",5,85,8
+ariados,168,https://pokeapi.co/api/v2/pokemon/168/,"bug, poison",11,335,7
+crobat,169,https://pokeapi.co/api/v2/pokemon/169/,"poison, flying",18,750,6
+chinchou,170,https://pokeapi.co/api/v2/pokemon/170/,"water, electric",5,120,8
+lanturn,171,https://pokeapi.co/api/v2/pokemon/171/,"water, electric",12,225,7
+pichu,172,https://pokeapi.co/api/v2/pokemon/172/,electric,3,20,5
+cleffa,173,https://pokeapi.co/api/v2/pokemon/173/,fairy,3,30,6
+igglybuff,174,https://pokeapi.co/api/v2/pokemon/174/,"normal, fairy",3,10,9
+togepi,175,https://pokeapi.co/api/v2/pokemon/175/,fairy,3,15,6
+togetic,176,https://pokeapi.co/api/v2/pokemon/176/,"fairy, flying",6,32,7
+natu,177,https://pokeapi.co/api/v2/pokemon/177/,"psychic, flying",2,20,4
+xatu,178,https://pokeapi.co/api/v2/pokemon/178/,"psychic, flying",15,150,4
+mareep,179,https://pokeapi.co/api/v2/pokemon/179/,electric,6,78,6
+flaaffy,180,https://pokeapi.co/api/v2/pokemon/180/,electric,8,133,7
+ampharos,181,https://pokeapi.co/api/v2/pokemon/181/,electric,14,615,8
+bellossom,182,https://pokeapi.co/api/v2/pokemon/182/,grass,4,58,9
+marill,183,https://pokeapi.co/api/v2/pokemon/183/,"water, fairy",4,85,6
+azumarill,184,https://pokeapi.co/api/v2/pokemon/184/,"water, fairy",8,285,9
+sudowoodo,185,https://pokeapi.co/api/v2/pokemon/185/,rock,12,380,9
+politoed,186,https://pokeapi.co/api/v2/pokemon/186/,water,11,339,8
+hoppip,187,https://pokeapi.co/api/v2/pokemon/187/,"grass, flying",4,5,6
+skiploom,188,https://pokeapi.co/api/v2/pokemon/188/,"grass, flying",6,10,8
+jumpluff,189,https://pokeapi.co/api/v2/pokemon/189/,"grass, flying",8,30,8
+aipom,190,https://pokeapi.co/api/v2/pokemon/190/,normal,8,115,5
+sunkern,191,https://pokeapi.co/api/v2/pokemon/191/,grass,3,18,7
+sunflora,192,https://pokeapi.co/api/v2/pokemon/192/,grass,8,85,8
+yanma,193,https://pokeapi.co/api/v2/pokemon/193/,"bug, flying",12,380,5
+wooper,194,https://pokeapi.co/api/v2/pokemon/194/,"water, ground",4,85,6
+quagsire,195,https://pokeapi.co/api/v2/pokemon/195/,"water, ground",14,750,8
+espeon,196,https://pokeapi.co/api/v2/pokemon/196/,psychic,9,265,6
+umbreon,197,https://pokeapi.co/api/v2/pokemon/197/,dark,10,270,7
+murkrow,198,https://pokeapi.co/api/v2/pokemon/198/,"dark, flying",5,21,7
+slowking,199,https://pokeapi.co/api/v2/pokemon/199/,"water, psychic",20,795,8
+misdreavus,200,https://pokeapi.co/api/v2/pokemon/200/,ghost,7,10,10
+unown,201,https://pokeapi.co/api/v2/pokemon/201/,psychic,5,50,5
+wobbuffet,202,https://pokeapi.co/api/v2/pokemon/202/,psychic,13,285,9
+girafarig,203,https://pokeapi.co/api/v2/pokemon/203/,"normal, psychic",15,415,9
+pineco,204,https://pokeapi.co/api/v2/pokemon/204/,bug,6,72,6
+forretress,205,https://pokeapi.co/api/v2/pokemon/205/,"bug, steel",12,1258,10
+dunsparce,206,https://pokeapi.co/api/v2/pokemon/206/,normal,15,140,9
+gligar,207,https://pokeapi.co/api/v2/pokemon/207/,"ground, flying",11,648,6
+steelix,208,https://pokeapi.co/api/v2/pokemon/208/,"steel, ground",92,4000,7
+snubbull,209,https://pokeapi.co/api/v2/pokemon/209/,fairy,6,78,8
+granbull,210,https://pokeapi.co/api/v2/pokemon/210/,fairy,14,487,8
+qwilfish,211,https://pokeapi.co/api/v2/pokemon/211/,"water, poison",5,39,8
+scizor,212,https://pokeapi.co/api/v2/pokemon/212/,"bug, steel",18,1180,6
+shuckle,213,https://pokeapi.co/api/v2/pokemon/213/,"bug, rock",6,205,7
+heracross,214,https://pokeapi.co/api/v2/pokemon/214/,"bug, fighting",15,540,9
+sneasel,215,https://pokeapi.co/api/v2/pokemon/215/,"dark, ice",9,280,7
+teddiursa,216,https://pokeapi.co/api/v2/pokemon/216/,normal,6,88,9
+ursaring,217,https://pokeapi.co/api/v2/pokemon/217/,normal,18,1258,8
+slugma,218,https://pokeapi.co/api/v2/pokemon/218/,fire,7,350,6
+magcargo,219,https://pokeapi.co/api/v2/pokemon/219/,"fire, rock",8,550,8
+swinub,220,https://pokeapi.co/api/v2/pokemon/220/,"ice, ground",4,65,6
+piloswine,221,https://pokeapi.co/api/v2/pokemon/221/,"ice, ground",11,558,9
+corsola,222,https://pokeapi.co/api/v2/pokemon/222/,"water, rock",6,50,7
+remoraid,223,https://pokeapi.co/api/v2/pokemon/223/,water,6,120,8
+octillery,224,https://pokeapi.co/api/v2/pokemon/224/,water,9,285,9
+delibird,225,https://pokeapi.co/api/v2/pokemon/225/,"ice, flying",9,160,8
+mantine,226,https://pokeapi.co/api/v2/pokemon/226/,"water, flying",21,2200,7
+skarmory,227,https://pokeapi.co/api/v2/pokemon/227/,"steel, flying",17,505,8
+houndour,228,https://pokeapi.co/api/v2/pokemon/228/,"dark, fire",6,108,8
+houndoom,229,https://pokeapi.co/api/v2/pokemon/229/,"dark, fire",14,350,8
+kingdra,230,https://pokeapi.co/api/v2/pokemon/230/,"water, dragon",18,1520,7
+phanpy,231,https://pokeapi.co/api/v2/pokemon/231/,ground,5,335,6
+donphan,232,https://pokeapi.co/api/v2/pokemon/232/,ground,11,1200,7
+porygon2,233,https://pokeapi.co/api/v2/pokemon/233/,normal,6,325,8
+stantler,234,https://pokeapi.co/api/v2/pokemon/234/,normal,14,712,8
+smeargle,235,https://pokeapi.co/api/v2/pokemon/235/,normal,12,580,8
+tyrogue,236,https://pokeapi.co/api/v2/pokemon/236/,fighting,7,210,7
+hitmontop,237,https://pokeapi.co/api/v2/pokemon/237/,fighting,14,480,9
+smoochum,238,https://pokeapi.co/api/v2/pokemon/238/,"ice, psychic",4,60,8
+elekid,239,https://pokeapi.co/api/v2/pokemon/239/,electric,6,235,6
+magby,240,https://pokeapi.co/api/v2/pokemon/240/,fire,7,214,5
+miltank,241,https://pokeapi.co/api/v2/pokemon/241/,normal,12,755,7
+blissey,242,https://pokeapi.co/api/v2/pokemon/242/,normal,15,468,7
+raikou,243,https://pokeapi.co/api/v2/pokemon/243/,electric,19,1780,6
+entei,244,https://pokeapi.co/api/v2/pokemon/244/,fire,21,1980,5
+suicune,245,https://pokeapi.co/api/v2/pokemon/245/,water,20,1870,7
+larvitar,246,https://pokeapi.co/api/v2/pokemon/246/,"rock, ground",6,720,8
+pupitar,247,https://pokeapi.co/api/v2/pokemon/247/,"rock, ground",12,1520,7
+tyranitar,248,https://pokeapi.co/api/v2/pokemon/248/,"rock, dark",20,2020,9
+lugia,249,https://pokeapi.co/api/v2/pokemon/249/,"psychic, flying",52,2160,5
+ho-oh,250,https://pokeapi.co/api/v2/pokemon/250/,"fire, flying",38,1990,5
+celebi,251,https://pokeapi.co/api/v2/pokemon/251/,"psychic, grass",6,50,6
+treecko,252,https://pokeapi.co/api/v2/pokemon/252/,grass,5,50,7
+grovyle,253,https://pokeapi.co/api/v2/pokemon/253/,grass,9,216,7
+sceptile,254,https://pokeapi.co/api/v2/pokemon/254/,grass,17,522,8
+torchic,255,https://pokeapi.co/api/v2/pokemon/255/,fire,4,25,7
+combusken,256,https://pokeapi.co/api/v2/pokemon/256/,"fire, fighting",9,195,9
+blaziken,257,https://pokeapi.co/api/v2/pokemon/257/,"fire, fighting",19,520,8
+mudkip,258,https://pokeapi.co/api/v2/pokemon/258/,water,4,76,6
+marshtomp,259,https://pokeapi.co/api/v2/pokemon/259/,"water, ground",7,280,9
+swampert,260,https://pokeapi.co/api/v2/pokemon/260/,"water, ground",15,819,8
+poochyena,261,https://pokeapi.co/api/v2/pokemon/261/,dark,5,136,9
+mightyena,262,https://pokeapi.co/api/v2/pokemon/262/,dark,10,370,9
+zigzagoon,263,https://pokeapi.co/api/v2/pokemon/263/,normal,4,175,9
+linoone,264,https://pokeapi.co/api/v2/pokemon/264/,normal,5,325,7
+wurmple,265,https://pokeapi.co/api/v2/pokemon/265/,bug,3,36,7
+silcoon,266,https://pokeapi.co/api/v2/pokemon/266/,bug,6,100,7
+beautifly,267,https://pokeapi.co/api/v2/pokemon/267/,"bug, flying",10,284,9
+cascoon,268,https://pokeapi.co/api/v2/pokemon/268/,bug,7,115,7
+dustox,269,https://pokeapi.co/api/v2/pokemon/269/,"bug, poison",12,316,6
+lotad,270,https://pokeapi.co/api/v2/pokemon/270/,"water, grass",5,26,5
+lombre,271,https://pokeapi.co/api/v2/pokemon/271/,"water, grass",12,325,6
+ludicolo,272,https://pokeapi.co/api/v2/pokemon/272/,"water, grass",15,550,8
+seedot,273,https://pokeapi.co/api/v2/pokemon/273/,grass,5,40,6
+nuzleaf,274,https://pokeapi.co/api/v2/pokemon/274/,"grass, dark",10,280,7
+shiftry,275,https://pokeapi.co/api/v2/pokemon/275/,"grass, dark",13,596,7
+taillow,276,https://pokeapi.co/api/v2/pokemon/276/,"normal, flying",3,23,7
+swellow,277,https://pokeapi.co/api/v2/pokemon/277/,"normal, flying",7,198,7
+wingull,278,https://pokeapi.co/api/v2/pokemon/278/,"water, flying",6,95,7
+pelipper,279,https://pokeapi.co/api/v2/pokemon/279/,"water, flying",12,280,8
+ralts,280,https://pokeapi.co/api/v2/pokemon/280/,"psychic, fairy",4,66,5
+kirlia,281,https://pokeapi.co/api/v2/pokemon/281/,"psychic, fairy",8,202,6
+gardevoir,282,https://pokeapi.co/api/v2/pokemon/282/,"psychic, fairy",16,484,9
+surskit,283,https://pokeapi.co/api/v2/pokemon/283/,"bug, water",5,17,7
+masquerain,284,https://pokeapi.co/api/v2/pokemon/284/,"bug, flying",8,36,10
+shroomish,285,https://pokeapi.co/api/v2/pokemon/285/,grass,4,45,9
+breloom,286,https://pokeapi.co/api/v2/pokemon/286/,"grass, fighting",12,392,7
+slakoth,287,https://pokeapi.co/api/v2/pokemon/287/,normal,8,240,7
+vigoroth,288,https://pokeapi.co/api/v2/pokemon/288/,normal,14,465,8
+slaking,289,https://pokeapi.co/api/v2/pokemon/289/,normal,20,1305,7
+nincada,290,https://pokeapi.co/api/v2/pokemon/290/,"bug, ground",5,55,7
+ninjask,291,https://pokeapi.co/api/v2/pokemon/291/,"bug, flying",8,120,7
+shedinja,292,https://pokeapi.co/api/v2/pokemon/292/,"bug, ghost",8,12,8
+whismur,293,https://pokeapi.co/api/v2/pokemon/293/,normal,6,163,7
+loudred,294,https://pokeapi.co/api/v2/pokemon/294/,normal,10,405,7
+exploud,295,https://pokeapi.co/api/v2/pokemon/295/,normal,15,840,7
+makuhita,296,https://pokeapi.co/api/v2/pokemon/296/,fighting,10,864,8
+hariyama,297,https://pokeapi.co/api/v2/pokemon/297/,fighting,23,2538,8
+azurill,298,https://pokeapi.co/api/v2/pokemon/298/,"normal, fairy",2,20,7
+nosepass,299,https://pokeapi.co/api/v2/pokemon/299/,rock,10,970,8
+skitty,300,https://pokeapi.co/api/v2/pokemon/300/,normal,6,110,6
+delcatty,301,https://pokeapi.co/api/v2/pokemon/301/,normal,11,326,8
+sableye,302,https://pokeapi.co/api/v2/pokemon/302/,"dark, ghost",5,110,7
+mawile,303,https://pokeapi.co/api/v2/pokemon/303/,"steel, fairy",6,115,6
+aron,304,https://pokeapi.co/api/v2/pokemon/304/,"steel, rock",4,600,4
+lairon,305,https://pokeapi.co/api/v2/pokemon/305/,"steel, rock",9,1200,6
+aggron,306,https://pokeapi.co/api/v2/pokemon/306/,"steel, rock",21,3600,6
+meditite,307,https://pokeapi.co/api/v2/pokemon/307/,"fighting, psychic",6,112,8
+medicham,308,https://pokeapi.co/api/v2/pokemon/308/,"fighting, psychic",13,315,8
+electrike,309,https://pokeapi.co/api/v2/pokemon/309/,electric,6,152,9
+manectric,310,https://pokeapi.co/api/v2/pokemon/310/,electric,15,402,9
+plusle,311,https://pokeapi.co/api/v2/pokemon/311/,electric,4,42,6
+minun,312,https://pokeapi.co/api/v2/pokemon/312/,electric,4,42,5
+volbeat,313,https://pokeapi.co/api/v2/pokemon/313/,bug,7,177,7
+illumise,314,https://pokeapi.co/api/v2/pokemon/314/,bug,6,177,8
+roselia,315,https://pokeapi.co/api/v2/pokemon/315/,"grass, poison",3,20,7
+gulpin,316,https://pokeapi.co/api/v2/pokemon/316/,poison,4,103,6
+swalot,317,https://pokeapi.co/api/v2/pokemon/317/,poison,17,800,6
+carvanha,318,https://pokeapi.co/api/v2/pokemon/318/,"water, dark",8,208,8
+sharpedo,319,https://pokeapi.co/api/v2/pokemon/319/,"water, dark",18,888,8
+wailmer,320,https://pokeapi.co/api/v2/pokemon/320/,water,20,1300,7
+wailord,321,https://pokeapi.co/api/v2/pokemon/321/,water,145,3980,7
+numel,322,https://pokeapi.co/api/v2/pokemon/322/,"fire, ground",7,240,5
+camerupt,323,https://pokeapi.co/api/v2/pokemon/323/,"fire, ground",19,2200,8
+torkoal,324,https://pokeapi.co/api/v2/pokemon/324/,fire,5,804,7
+spoink,325,https://pokeapi.co/api/v2/pokemon/325/,psychic,7,306,6
+grumpig,326,https://pokeapi.co/api/v2/pokemon/326/,psychic,9,715,7
+spinda,327,https://pokeapi.co/api/v2/pokemon/327/,normal,11,50,6
+trapinch,328,https://pokeapi.co/api/v2/pokemon/328/,ground,7,150,8
+vibrava,329,https://pokeapi.co/api/v2/pokemon/329/,"ground, dragon",11,153,7
+flygon,330,https://pokeapi.co/api/v2/pokemon/330/,"ground, dragon",20,820,6
+cacnea,331,https://pokeapi.co/api/v2/pokemon/331/,grass,4,513,6
+cacturne,332,https://pokeapi.co/api/v2/pokemon/332/,"grass, dark",13,774,8
+swablu,333,https://pokeapi.co/api/v2/pokemon/333/,"normal, flying",4,12,6
+altaria,334,https://pokeapi.co/api/v2/pokemon/334/,"dragon, flying",11,206,7
+zangoose,335,https://pokeapi.co/api/v2/pokemon/335/,normal,13,403,8
+seviper,336,https://pokeapi.co/api/v2/pokemon/336/,poison,27,525,7
+lunatone,337,https://pokeapi.co/api/v2/pokemon/337/,"rock, psychic",10,1680,8
+solrock,338,https://pokeapi.co/api/v2/pokemon/338/,"rock, psychic",12,1540,7
+barboach,339,https://pokeapi.co/api/v2/pokemon/339/,"water, ground",4,19,8
+whiscash,340,https://pokeapi.co/api/v2/pokemon/340/,"water, ground",9,236,8
+corphish,341,https://pokeapi.co/api/v2/pokemon/341/,water,6,115,8
+crawdaunt,342,https://pokeapi.co/api/v2/pokemon/342/,"water, dark",11,328,9
+baltoy,343,https://pokeapi.co/api/v2/pokemon/343/,"ground, psychic",5,215,6
+claydol,344,https://pokeapi.co/api/v2/pokemon/344/,"ground, psychic",15,1080,7
+lileep,345,https://pokeapi.co/api/v2/pokemon/345/,"rock, grass",10,238,6
+cradily,346,https://pokeapi.co/api/v2/pokemon/346/,"rock, grass",15,604,7
+anorith,347,https://pokeapi.co/api/v2/pokemon/347/,"rock, bug",7,125,7
+armaldo,348,https://pokeapi.co/api/v2/pokemon/348/,"rock, bug",15,682,7
+feebas,349,https://pokeapi.co/api/v2/pokemon/349/,water,6,74,6
+milotic,350,https://pokeapi.co/api/v2/pokemon/350/,water,62,1620,7
+castform,351,https://pokeapi.co/api/v2/pokemon/351/,normal,3,8,8
+kecleon,352,https://pokeapi.co/api/v2/pokemon/352/,normal,10,220,7
+shuppet,353,https://pokeapi.co/api/v2/pokemon/353/,ghost,6,23,7
+banette,354,https://pokeapi.co/api/v2/pokemon/354/,ghost,11,125,7
+duskull,355,https://pokeapi.co/api/v2/pokemon/355/,ghost,8,150,7
+dusclops,356,https://pokeapi.co/api/v2/pokemon/356/,ghost,16,306,8
+tropius,357,https://pokeapi.co/api/v2/pokemon/357/,"grass, flying",20,1000,7
+chimecho,358,https://pokeapi.co/api/v2/pokemon/358/,psychic,6,10,8
+absol,359,https://pokeapi.co/api/v2/pokemon/359/,dark,12,470,5
+wynaut,360,https://pokeapi.co/api/v2/pokemon/360/,psychic,6,140,6
+snorunt,361,https://pokeapi.co/api/v2/pokemon/361/,ice,7,168,7
+glalie,362,https://pokeapi.co/api/v2/pokemon/362/,ice,15,2565,6
+spheal,363,https://pokeapi.co/api/v2/pokemon/363/,"ice, water",8,395,6
+sealeo,364,https://pokeapi.co/api/v2/pokemon/364/,"ice, water",11,876,6
+walrein,365,https://pokeapi.co/api/v2/pokemon/365/,"ice, water",14,1506,7
+clamperl,366,https://pokeapi.co/api/v2/pokemon/366/,water,4,525,8
+huntail,367,https://pokeapi.co/api/v2/pokemon/367/,water,17,270,7
+gorebyss,368,https://pokeapi.co/api/v2/pokemon/368/,water,18,226,8
+relicanth,369,https://pokeapi.co/api/v2/pokemon/369/,"water, rock",10,234,9
+luvdisc,370,https://pokeapi.co/api/v2/pokemon/370/,water,6,87,7
+bagon,371,https://pokeapi.co/api/v2/pokemon/371/,dragon,6,421,5
+shelgon,372,https://pokeapi.co/api/v2/pokemon/372/,dragon,11,1105,7
+salamence,373,https://pokeapi.co/api/v2/pokemon/373/,"dragon, flying",15,1026,9
+beldum,374,https://pokeapi.co/api/v2/pokemon/374/,"steel, psychic",6,952,6
+metang,375,https://pokeapi.co/api/v2/pokemon/375/,"steel, psychic",12,2025,6
+metagross,376,https://pokeapi.co/api/v2/pokemon/376/,"steel, psychic",16,5500,9
+regirock,377,https://pokeapi.co/api/v2/pokemon/377/,rock,17,2300,8
+regice,378,https://pokeapi.co/api/v2/pokemon/378/,ice,18,1750,6
+registeel,379,https://pokeapi.co/api/v2/pokemon/379/,steel,19,2050,9
+latias,380,https://pokeapi.co/api/v2/pokemon/380/,"dragon, psychic",14,400,6
+latios,381,https://pokeapi.co/api/v2/pokemon/381/,"dragon, psychic",20,600,6
+kyogre,382,https://pokeapi.co/api/v2/pokemon/382/,water,45,3520,6
+groudon,383,https://pokeapi.co/api/v2/pokemon/383/,ground,35,9500,7
+rayquaza,384,https://pokeapi.co/api/v2/pokemon/384/,"dragon, flying",70,2065,8
+jirachi,385,https://pokeapi.co/api/v2/pokemon/385/,"steel, psychic",3,11,7
+deoxys-normal,386,https://pokeapi.co/api/v2/pokemon/386/,psychic,17,608,13
+turtwig,387,https://pokeapi.co/api/v2/pokemon/387/,grass,4,102,7
+grotle,388,https://pokeapi.co/api/v2/pokemon/388/,grass,11,970,6
+torterra,389,https://pokeapi.co/api/v2/pokemon/389/,"grass, ground",22,3100,8
+chimchar,390,https://pokeapi.co/api/v2/pokemon/390/,fire,5,62,8
+monferno,391,https://pokeapi.co/api/v2/pokemon/391/,"fire, fighting",9,220,8
+infernape,392,https://pokeapi.co/api/v2/pokemon/392/,"fire, fighting",12,550,9
+piplup,393,https://pokeapi.co/api/v2/pokemon/393/,water,4,52,6
+prinplup,394,https://pokeapi.co/api/v2/pokemon/394/,water,8,230,8
+empoleon,395,https://pokeapi.co/api/v2/pokemon/395/,"water, steel",17,845,8
+starly,396,https://pokeapi.co/api/v2/pokemon/396/,"normal, flying",3,20,6
+staravia,397,https://pokeapi.co/api/v2/pokemon/397/,"normal, flying",6,155,8
+staraptor,398,https://pokeapi.co/api/v2/pokemon/398/,"normal, flying",12,249,9
+bidoof,399,https://pokeapi.co/api/v2/pokemon/399/,normal,5,200,6
+bibarel,400,https://pokeapi.co/api/v2/pokemon/400/,"normal, water",10,315,7
+kricketot,401,https://pokeapi.co/api/v2/pokemon/401/,bug,3,22,9
+kricketune,402,https://pokeapi.co/api/v2/pokemon/402/,bug,10,255,10
+shinx,403,https://pokeapi.co/api/v2/pokemon/403/,electric,5,95,5
+luxio,404,https://pokeapi.co/api/v2/pokemon/404/,electric,9,305,5
+luxray,405,https://pokeapi.co/api/v2/pokemon/405/,electric,14,420,6
+budew,406,https://pokeapi.co/api/v2/pokemon/406/,"grass, poison",2,12,5
+roserade,407,https://pokeapi.co/api/v2/pokemon/407/,"grass, poison",9,145,8
+cranidos,408,https://pokeapi.co/api/v2/pokemon/408/,rock,9,315,8
+rampardos,409,https://pokeapi.co/api/v2/pokemon/409/,rock,16,1025,9
+shieldon,410,https://pokeapi.co/api/v2/pokemon/410/,"rock, steel",5,570,8
+bastiodon,411,https://pokeapi.co/api/v2/pokemon/411/,"rock, steel",13,1495,9
+burmy,412,https://pokeapi.co/api/v2/pokemon/412/,bug,2,34,5
+wormadam-plant,413,https://pokeapi.co/api/v2/pokemon/413/,"bug, grass",5,65,14
+mothim,414,https://pokeapi.co/api/v2/pokemon/414/,"bug, flying",9,233,6
+combee,415,https://pokeapi.co/api/v2/pokemon/415/,"bug, flying",3,55,6
+vespiquen,416,https://pokeapi.co/api/v2/pokemon/416/,"bug, flying",12,385,9
+pachirisu,417,https://pokeapi.co/api/v2/pokemon/417/,electric,4,39,9
+buizel,418,https://pokeapi.co/api/v2/pokemon/418/,water,7,295,6
+floatzel,419,https://pokeapi.co/api/v2/pokemon/419/,water,11,335,8
+cherubi,420,https://pokeapi.co/api/v2/pokemon/420/,grass,4,33,7
+cherrim,421,https://pokeapi.co/api/v2/pokemon/421/,grass,5,93,7
+shellos,422,https://pokeapi.co/api/v2/pokemon/422/,water,3,63,7
+gastrodon,423,https://pokeapi.co/api/v2/pokemon/423/,"water, ground",9,299,9
+ambipom,424,https://pokeapi.co/api/v2/pokemon/424/,normal,12,203,7
+drifloon,425,https://pokeapi.co/api/v2/pokemon/425/,"ghost, flying",4,12,8
+drifblim,426,https://pokeapi.co/api/v2/pokemon/426/,"ghost, flying",12,150,8
+buneary,427,https://pokeapi.co/api/v2/pokemon/427/,normal,4,55,7
+lopunny,428,https://pokeapi.co/api/v2/pokemon/428/,normal,12,333,7
+mismagius,429,https://pokeapi.co/api/v2/pokemon/429/,ghost,9,44,9
+honchkrow,430,https://pokeapi.co/api/v2/pokemon/430/,"dark, flying",9,273,9
+glameow,431,https://pokeapi.co/api/v2/pokemon/431/,normal,5,39,7
+purugly,432,https://pokeapi.co/api/v2/pokemon/432/,normal,10,438,7
+chingling,433,https://pokeapi.co/api/v2/pokemon/433/,psychic,2,6,9
+stunky,434,https://pokeapi.co/api/v2/pokemon/434/,"poison, dark",4,192,6
+skuntank,435,https://pokeapi.co/api/v2/pokemon/435/,"poison, dark",10,380,8
+bronzor,436,https://pokeapi.co/api/v2/pokemon/436/,"steel, psychic",5,605,7
+bronzong,437,https://pokeapi.co/api/v2/pokemon/437/,"steel, psychic",13,1870,8
+bonsly,438,https://pokeapi.co/api/v2/pokemon/438/,rock,5,150,6
+mime-jr,439,https://pokeapi.co/api/v2/pokemon/439/,"psychic, fairy",6,130,7
+happiny,440,https://pokeapi.co/api/v2/pokemon/440/,normal,6,244,7
+chatot,441,https://pokeapi.co/api/v2/pokemon/441/,"normal, flying",5,19,6
+spiritomb,442,https://pokeapi.co/api/v2/pokemon/442/,"ghost, dark",10,1080,9
+gible,443,https://pokeapi.co/api/v2/pokemon/443/,"dragon, ground",7,205,5
+gabite,444,https://pokeapi.co/api/v2/pokemon/444/,"dragon, ground",14,560,6
+garchomp,445,https://pokeapi.co/api/v2/pokemon/445/,"dragon, ground",19,950,8
+munchlax,446,https://pokeapi.co/api/v2/pokemon/446/,normal,6,1050,8
+riolu,447,https://pokeapi.co/api/v2/pokemon/447/,fighting,7,202,5
+lucario,448,https://pokeapi.co/api/v2/pokemon/448/,"fighting, steel",12,540,7
+hippopotas,449,https://pokeapi.co/api/v2/pokemon/449/,ground,8,495,10
+hippowdon,450,https://pokeapi.co/api/v2/pokemon/450/,ground,20,3000,9
+skorupi,451,https://pokeapi.co/api/v2/pokemon/451/,"poison, bug",8,120,7
+drapion,452,https://pokeapi.co/api/v2/pokemon/452/,"poison, dark",13,615,7
+croagunk,453,https://pokeapi.co/api/v2/pokemon/453/,"poison, fighting",7,230,8
+toxicroak,454,https://pokeapi.co/api/v2/pokemon/454/,"poison, fighting",13,444,9
+carnivine,455,https://pokeapi.co/api/v2/pokemon/455/,grass,14,270,9
+finneon,456,https://pokeapi.co/api/v2/pokemon/456/,water,4,70,7
+lumineon,457,https://pokeapi.co/api/v2/pokemon/457/,water,12,240,8
+mantyke,458,https://pokeapi.co/api/v2/pokemon/458/,"water, flying",10,650,7
+snover,459,https://pokeapi.co/api/v2/pokemon/459/,"grass, ice",10,505,6
+abomasnow,460,https://pokeapi.co/api/v2/pokemon/460/,"grass, ice",22,1355,9
+weavile,461,https://pokeapi.co/api/v2/pokemon/461/,"dark, ice",11,340,7
+magnezone,462,https://pokeapi.co/api/v2/pokemon/462/,"electric, steel",12,1800,9
+lickilicky,463,https://pokeapi.co/api/v2/pokemon/463/,normal,17,1400,10
+rhyperior,464,https://pokeapi.co/api/v2/pokemon/464/,"ground, rock",24,2828,9
+tangrowth,465,https://pokeapi.co/api/v2/pokemon/465/,grass,20,1286,9
+electivire,466,https://pokeapi.co/api/v2/pokemon/466/,electric,18,1386,10
+magmortar,467,https://pokeapi.co/api/v2/pokemon/467/,fire,16,680,9
+togekiss,468,https://pokeapi.co/api/v2/pokemon/468/,"fairy, flying",15,380,8
+yanmega,469,https://pokeapi.co/api/v2/pokemon/469/,"bug, flying",19,515,7
+leafeon,470,https://pokeapi.co/api/v2/pokemon/470/,grass,10,255,7
+glaceon,471,https://pokeapi.co/api/v2/pokemon/471/,ice,8,259,7
+gliscor,472,https://pokeapi.co/api/v2/pokemon/472/,"ground, flying",20,425,7
+mamoswine,473,https://pokeapi.co/api/v2/pokemon/473/,"ice, ground",25,2910,9
+porygon-z,474,https://pokeapi.co/api/v2/pokemon/474/,normal,9,340,9
+gallade,475,https://pokeapi.co/api/v2/pokemon/475/,"psychic, fighting",16,520,7
+probopass,476,https://pokeapi.co/api/v2/pokemon/476/,"rock, steel",14,3400,9
+dusknoir,477,https://pokeapi.co/api/v2/pokemon/477/,ghost,22,1066,8
+froslass,478,https://pokeapi.co/api/v2/pokemon/478/,"ice, ghost",13,266,8
+rotom,479,https://pokeapi.co/api/v2/pokemon/479/,"electric, ghost",3,3,5
+uxie,480,https://pokeapi.co/api/v2/pokemon/480/,psychic,3,3,4
+mesprit,481,https://pokeapi.co/api/v2/pokemon/481/,psychic,3,3,7
+azelf,482,https://pokeapi.co/api/v2/pokemon/482/,psychic,3,3,5
+dialga,483,https://pokeapi.co/api/v2/pokemon/483/,"steel, dragon",54,6830,6
+palkia,484,https://pokeapi.co/api/v2/pokemon/484/,"water, dragon",42,3360,6
+heatran,485,https://pokeapi.co/api/v2/pokemon/485/,"fire, steel",17,4300,7
+regigigas,486,https://pokeapi.co/api/v2/pokemon/486/,normal,37,4200,9
+giratina-altered,487,https://pokeapi.co/api/v2/pokemon/487/,"ghost, dragon",45,7500,16
+cresselia,488,https://pokeapi.co/api/v2/pokemon/488/,psychic,15,856,9
+phione,489,https://pokeapi.co/api/v2/pokemon/489/,water,4,31,6
+manaphy,490,https://pokeapi.co/api/v2/pokemon/490/,water,3,14,7
+darkrai,491,https://pokeapi.co/api/v2/pokemon/491/,dark,15,505,7
+shaymin-land,492,https://pokeapi.co/api/v2/pokemon/492/,grass,2,21,12
+arceus,493,https://pokeapi.co/api/v2/pokemon/493/,normal,32,3200,6
+victini,494,https://pokeapi.co/api/v2/pokemon/494/,"psychic, fire",4,40,7
+snivy,495,https://pokeapi.co/api/v2/pokemon/495/,grass,6,81,5
+servine,496,https://pokeapi.co/api/v2/pokemon/496/,grass,8,160,7
+serperior,497,https://pokeapi.co/api/v2/pokemon/497/,grass,33,630,9
+tepig,498,https://pokeapi.co/api/v2/pokemon/498/,fire,5,99,5
+pignite,499,https://pokeapi.co/api/v2/pokemon/499/,"fire, fighting",10,555,7
+emboar,500,https://pokeapi.co/api/v2/pokemon/500/,"fire, fighting",16,1500,6
+oshawott,501,https://pokeapi.co/api/v2/pokemon/501/,water,5,59,8
+dewott,502,https://pokeapi.co/api/v2/pokemon/502/,water,8,245,6
+samurott,503,https://pokeapi.co/api/v2/pokemon/503/,water,15,946,8
+patrat,504,https://pokeapi.co/api/v2/pokemon/504/,normal,5,116,6
+watchog,505,https://pokeapi.co/api/v2/pokemon/505/,normal,11,270,7
+lillipup,506,https://pokeapi.co/api/v2/pokemon/506/,normal,4,41,8
+herdier,507,https://pokeapi.co/api/v2/pokemon/507/,normal,9,147,7
+stoutland,508,https://pokeapi.co/api/v2/pokemon/508/,normal,12,610,9
+purrloin,509,https://pokeapi.co/api/v2/pokemon/509/,dark,4,101,8
+liepard,510,https://pokeapi.co/api/v2/pokemon/510/,dark,11,375,7
+pansage,511,https://pokeapi.co/api/v2/pokemon/511/,grass,6,105,7
+simisage,512,https://pokeapi.co/api/v2/pokemon/512/,grass,11,305,8
+pansear,513,https://pokeapi.co/api/v2/pokemon/513/,fire,6,110,7
+simisear,514,https://pokeapi.co/api/v2/pokemon/514/,fire,10,280,8
+panpour,515,https://pokeapi.co/api/v2/pokemon/515/,water,6,135,7
+simipour,516,https://pokeapi.co/api/v2/pokemon/516/,water,10,290,8
+munna,517,https://pokeapi.co/api/v2/pokemon/517/,psychic,6,233,5
+musharna,518,https://pokeapi.co/api/v2/pokemon/518/,psychic,11,605,8
+pidove,519,https://pokeapi.co/api/v2/pokemon/519/,"normal, flying",3,21,6
+tranquill,520,https://pokeapi.co/api/v2/pokemon/520/,"normal, flying",6,150,9
+unfezant,521,https://pokeapi.co/api/v2/pokemon/521/,"normal, flying",12,290,8
+blitzle,522,https://pokeapi.co/api/v2/pokemon/522/,electric,8,298,7
+zebstrika,523,https://pokeapi.co/api/v2/pokemon/523/,electric,16,795,9
+roggenrola,524,https://pokeapi.co/api/v2/pokemon/524/,rock,4,180,10
+boldore,525,https://pokeapi.co/api/v2/pokemon/525/,rock,9,1020,7
+gigalith,526,https://pokeapi.co/api/v2/pokemon/526/,rock,17,2600,8
+woobat,527,https://pokeapi.co/api/v2/pokemon/527/,"psychic, flying",4,21,6
+swoobat,528,https://pokeapi.co/api/v2/pokemon/528/,"psychic, flying",9,105,7
+drilbur,529,https://pokeapi.co/api/v2/pokemon/529/,ground,3,85,7
+excadrill,530,https://pokeapi.co/api/v2/pokemon/530/,"ground, steel",7,404,9
+audino,531,https://pokeapi.co/api/v2/pokemon/531/,normal,11,310,6
+timburr,532,https://pokeapi.co/api/v2/pokemon/532/,fighting,6,125,7
+gurdurr,533,https://pokeapi.co/api/v2/pokemon/533/,fighting,12,400,7
+conkeldurr,534,https://pokeapi.co/api/v2/pokemon/534/,fighting,14,870,10
+tympole,535,https://pokeapi.co/api/v2/pokemon/535/,water,5,45,7
+palpitoad,536,https://pokeapi.co/api/v2/pokemon/536/,"water, ground",8,170,9
+seismitoad,537,https://pokeapi.co/api/v2/pokemon/537/,"water, ground",15,620,10
+throh,538,https://pokeapi.co/api/v2/pokemon/538/,fighting,13,555,5
+sawk,539,https://pokeapi.co/api/v2/pokemon/539/,fighting,14,510,4
+sewaddle,540,https://pokeapi.co/api/v2/pokemon/540/,"bug, grass",3,25,8
+swadloon,541,https://pokeapi.co/api/v2/pokemon/541/,"bug, grass",5,73,8
+leavanny,542,https://pokeapi.co/api/v2/pokemon/542/,"bug, grass",12,205,8
+venipede,543,https://pokeapi.co/api/v2/pokemon/543/,"bug, poison",4,53,8
+whirlipede,544,https://pokeapi.co/api/v2/pokemon/544/,"bug, poison",12,585,10
+scolipede,545,https://pokeapi.co/api/v2/pokemon/545/,"bug, poison",25,2005,9
+cottonee,546,https://pokeapi.co/api/v2/pokemon/546/,"grass, fairy",3,6,8
+whimsicott,547,https://pokeapi.co/api/v2/pokemon/547/,"grass, fairy",7,66,10
+petilil,548,https://pokeapi.co/api/v2/pokemon/548/,grass,5,66,7
+lilligant,549,https://pokeapi.co/api/v2/pokemon/549/,grass,11,163,9
+basculin-red-striped,550,https://pokeapi.co/api/v2/pokemon/550/,water,10,180,20
+sandile,551,https://pokeapi.co/api/v2/pokemon/551/,"ground, dark",7,152,7
+krokorok,552,https://pokeapi.co/api/v2/pokemon/552/,"ground, dark",10,334,8
+krookodile,553,https://pokeapi.co/api/v2/pokemon/553/,"ground, dark",15,963,10
+darumaka,554,https://pokeapi.co/api/v2/pokemon/554/,fire,6,375,8
+darmanitan-standard,555,https://pokeapi.co/api/v2/pokemon/555/,fire,13,929,19
+maractus,556,https://pokeapi.co/api/v2/pokemon/556/,grass,10,280,8
+dwebble,557,https://pokeapi.co/api/v2/pokemon/557/,"bug, rock",3,145,7
+crustle,558,https://pokeapi.co/api/v2/pokemon/558/,"bug, rock",14,2000,7
+scraggy,559,https://pokeapi.co/api/v2/pokemon/559/,"dark, fighting",6,118,7
+scrafty,560,https://pokeapi.co/api/v2/pokemon/560/,"dark, fighting",11,300,7
+sigilyph,561,https://pokeapi.co/api/v2/pokemon/561/,"psychic, flying",14,140,8
+yamask,562,https://pokeapi.co/api/v2/pokemon/562/,ghost,5,15,6
+cofagrigus,563,https://pokeapi.co/api/v2/pokemon/563/,ghost,17,765,10
+tirtouga,564,https://pokeapi.co/api/v2/pokemon/564/,"water, rock",7,165,8
+carracosta,565,https://pokeapi.co/api/v2/pokemon/565/,"water, rock",12,810,10
+archen,566,https://pokeapi.co/api/v2/pokemon/566/,"rock, flying",5,95,6
+archeops,567,https://pokeapi.co/api/v2/pokemon/567/,"rock, flying",14,320,8
+trubbish,568,https://pokeapi.co/api/v2/pokemon/568/,poison,6,310,8
+garbodor,569,https://pokeapi.co/api/v2/pokemon/569/,poison,19,1073,8
+zorua,570,https://pokeapi.co/api/v2/pokemon/570/,dark,7,125,5
+zoroark,571,https://pokeapi.co/api/v2/pokemon/571/,dark,16,811,7
+minccino,572,https://pokeapi.co/api/v2/pokemon/572/,normal,4,58,8
+cinccino,573,https://pokeapi.co/api/v2/pokemon/573/,normal,5,75,8
+gothita,574,https://pokeapi.co/api/v2/pokemon/574/,psychic,4,58,7
+gothorita,575,https://pokeapi.co/api/v2/pokemon/575/,psychic,7,180,9
+gothitelle,576,https://pokeapi.co/api/v2/pokemon/576/,psychic,15,440,10
+solosis,577,https://pokeapi.co/api/v2/pokemon/577/,psychic,3,10,7
+duosion,578,https://pokeapi.co/api/v2/pokemon/578/,psychic,6,80,7
+reuniclus,579,https://pokeapi.co/api/v2/pokemon/579/,psychic,10,201,9
+ducklett,580,https://pokeapi.co/api/v2/pokemon/580/,"water, flying",5,55,8
+swanna,581,https://pokeapi.co/api/v2/pokemon/581/,"water, flying",13,242,6
+vanillite,582,https://pokeapi.co/api/v2/pokemon/582/,ice,4,57,9
+vanillish,583,https://pokeapi.co/api/v2/pokemon/583/,ice,11,410,9
+vanilluxe,584,https://pokeapi.co/api/v2/pokemon/584/,ice,13,575,9
+deerling,585,https://pokeapi.co/api/v2/pokemon/585/,"normal, grass",6,195,8
+sawsbuck,586,https://pokeapi.co/api/v2/pokemon/586/,"normal, grass",19,925,8
+emolga,587,https://pokeapi.co/api/v2/pokemon/587/,"electric, flying",4,50,6
+karrablast,588,https://pokeapi.co/api/v2/pokemon/588/,bug,5,59,10
+escavalier,589,https://pokeapi.co/api/v2/pokemon/589/,"bug, steel",10,330,10
+foongus,590,https://pokeapi.co/api/v2/pokemon/590/,"grass, poison",2,10,7
+amoonguss,591,https://pokeapi.co/api/v2/pokemon/591/,"grass, poison",6,105,9
+frillish-male,592,https://pokeapi.co/api/v2/pokemon/592/,"water, ghost",12,330,13
+jellicent-male,593,https://pokeapi.co/api/v2/pokemon/593/,"water, ghost",22,1350,14
+alomomola,594,https://pokeapi.co/api/v2/pokemon/594/,water,12,316,9
+joltik,595,https://pokeapi.co/api/v2/pokemon/595/,"bug, electric",1,6,6
+galvantula,596,https://pokeapi.co/api/v2/pokemon/596/,"bug, electric",8,143,10
+ferroseed,597,https://pokeapi.co/api/v2/pokemon/597/,"grass, steel",6,188,9
+ferrothorn,598,https://pokeapi.co/api/v2/pokemon/598/,"grass, steel",10,1100,10
+klink,599,https://pokeapi.co/api/v2/pokemon/599/,steel,3,210,5
+klang,600,https://pokeapi.co/api/v2/pokemon/600/,steel,6,510,5
+klinklang,601,https://pokeapi.co/api/v2/pokemon/601/,steel,6,810,9
+tynamo,602,https://pokeapi.co/api/v2/pokemon/602/,electric,2,3,6
+eelektrik,603,https://pokeapi.co/api/v2/pokemon/603/,electric,12,220,9
+eelektross,604,https://pokeapi.co/api/v2/pokemon/604/,electric,21,805,10
+elgyem,605,https://pokeapi.co/api/v2/pokemon/605/,psychic,5,90,6
+beheeyem,606,https://pokeapi.co/api/v2/pokemon/606/,psychic,10,345,8
+litwick,607,https://pokeapi.co/api/v2/pokemon/607/,"ghost, fire",3,31,7
+lampent,608,https://pokeapi.co/api/v2/pokemon/608/,"ghost, fire",6,130,7
+chandelure,609,https://pokeapi.co/api/v2/pokemon/609/,"ghost, fire",10,343,10
+axew,610,https://pokeapi.co/api/v2/pokemon/610/,dragon,6,180,4
+fraxure,611,https://pokeapi.co/api/v2/pokemon/611/,dragon,10,360,7
+haxorus,612,https://pokeapi.co/api/v2/pokemon/612/,dragon,18,1055,7
+cubchoo,613,https://pokeapi.co/api/v2/pokemon/613/,ice,5,85,7
+beartic,614,https://pokeapi.co/api/v2/pokemon/614/,ice,26,2600,7
+cryogonal,615,https://pokeapi.co/api/v2/pokemon/615/,ice,11,1480,9
+shelmet,616,https://pokeapi.co/api/v2/pokemon/616/,bug,4,77,7
+accelgor,617,https://pokeapi.co/api/v2/pokemon/617/,bug,8,253,8
+stunfisk,618,https://pokeapi.co/api/v2/pokemon/618/,"ground, electric",7,110,8
+mienfoo,619,https://pokeapi.co/api/v2/pokemon/619/,fighting,9,200,7
+mienshao,620,https://pokeapi.co/api/v2/pokemon/620/,fighting,14,355,8
+druddigon,621,https://pokeapi.co/api/v2/pokemon/621/,dragon,16,1390,9
+golett,622,https://pokeapi.co/api/v2/pokemon/622/,"ground, ghost",10,920,6
+golurk,623,https://pokeapi.co/api/v2/pokemon/623/,"ground, ghost",28,3300,6
+pawniard,624,https://pokeapi.co/api/v2/pokemon/624/,"dark, steel",5,102,8
+bisharp,625,https://pokeapi.co/api/v2/pokemon/625/,"dark, steel",16,700,7
+bouffalant,626,https://pokeapi.co/api/v2/pokemon/626/,normal,16,946,10
+rufflet,627,https://pokeapi.co/api/v2/pokemon/627/,"normal, flying",5,105,7
+braviary,628,https://pokeapi.co/api/v2/pokemon/628/,"normal, flying",15,410,8
+vullaby,629,https://pokeapi.co/api/v2/pokemon/629/,"dark, flying",5,90,7
+mandibuzz,630,https://pokeapi.co/api/v2/pokemon/630/,"dark, flying",12,395,9
+heatmor,631,https://pokeapi.co/api/v2/pokemon/631/,fire,14,580,7
+durant,632,https://pokeapi.co/api/v2/pokemon/632/,"bug, steel",3,330,6
+deino,633,https://pokeapi.co/api/v2/pokemon/633/,"dark, dragon",8,173,5
+zweilous,634,https://pokeapi.co/api/v2/pokemon/634/,"dark, dragon",14,500,8
+hydreigon,635,https://pokeapi.co/api/v2/pokemon/635/,"dark, dragon",18,1600,9
+larvesta,636,https://pokeapi.co/api/v2/pokemon/636/,"bug, fire",11,288,8
+volcarona,637,https://pokeapi.co/api/v2/pokemon/637/,"bug, fire",16,460,9
+cobalion,638,https://pokeapi.co/api/v2/pokemon/638/,"steel, fighting",21,2500,8
+terrakion,639,https://pokeapi.co/api/v2/pokemon/639/,"rock, fighting",19,2600,9
+virizion,640,https://pokeapi.co/api/v2/pokemon/640/,"grass, fighting",20,2000,8
+tornadus-incarnate,641,https://pokeapi.co/api/v2/pokemon/641/,flying,15,630,18
+thundurus-incarnate,642,https://pokeapi.co/api/v2/pokemon/642/,"electric, flying",15,610,19
+reshiram,643,https://pokeapi.co/api/v2/pokemon/643/,"dragon, fire",32,3300,8
+zekrom,644,https://pokeapi.co/api/v2/pokemon/644/,"dragon, electric",29,3450,6
+landorus-incarnate,645,https://pokeapi.co/api/v2/pokemon/645/,"ground, flying",15,680,18
+kyurem,646,https://pokeapi.co/api/v2/pokemon/646/,"dragon, ice",30,3250,6
+keldeo-ordinary,647,https://pokeapi.co/api/v2/pokemon/647/,"water, fighting",14,485,15
+meloetta-aria,648,https://pokeapi.co/api/v2/pokemon/648/,"normal, psychic",6,65,13
+genesect,649,https://pokeapi.co/api/v2/pokemon/649/,"bug, steel",15,825,8
+chespin,650,https://pokeapi.co/api/v2/pokemon/650/,grass,4,90,7
+quilladin,651,https://pokeapi.co/api/v2/pokemon/651/,grass,7,290,9
+chesnaught,652,https://pokeapi.co/api/v2/pokemon/652/,"grass, fighting",16,900,10
+fennekin,653,https://pokeapi.co/api/v2/pokemon/653/,fire,4,94,8
+braixen,654,https://pokeapi.co/api/v2/pokemon/654/,fire,10,145,7
+delphox,655,https://pokeapi.co/api/v2/pokemon/655/,"fire, psychic",15,390,7
+froakie,656,https://pokeapi.co/api/v2/pokemon/656/,water,3,70,7
+frogadier,657,https://pokeapi.co/api/v2/pokemon/657/,water,6,109,9
+greninja,658,https://pokeapi.co/api/v2/pokemon/658/,"water, dark",15,400,8
+bunnelby,659,https://pokeapi.co/api/v2/pokemon/659/,normal,4,50,8
+diggersby,660,https://pokeapi.co/api/v2/pokemon/660/,"normal, ground",10,424,9
+fletchling,661,https://pokeapi.co/api/v2/pokemon/661/,"normal, flying",3,17,10
+fletchinder,662,https://pokeapi.co/api/v2/pokemon/662/,"fire, flying",7,160,11
+talonflame,663,https://pokeapi.co/api/v2/pokemon/663/,"fire, flying",12,245,10
+scatterbug,664,https://pokeapi.co/api/v2/pokemon/664/,bug,3,25,10
+spewpa,665,https://pokeapi.co/api/v2/pokemon/665/,bug,3,84,6
+vivillon,666,https://pokeapi.co/api/v2/pokemon/666/,"bug, flying",12,170,8
+litleo,667,https://pokeapi.co/api/v2/pokemon/667/,"fire, normal",6,135,6
+pyroar-male,668,https://pokeapi.co/api/v2/pokemon/668/,"fire, normal",15,815,11
+flabebe,669,https://pokeapi.co/api/v2/pokemon/669/,fairy,1,1,7
+floette,670,https://pokeapi.co/api/v2/pokemon/670/,fairy,2,9,7
+florges,671,https://pokeapi.co/api/v2/pokemon/671/,fairy,11,100,7
+skiddo,672,https://pokeapi.co/api/v2/pokemon/672/,grass,9,310,6
+gogoat,673,https://pokeapi.co/api/v2/pokemon/673/,grass,17,910,6
+pancham,674,https://pokeapi.co/api/v2/pokemon/674/,fighting,6,80,7
+pangoro,675,https://pokeapi.co/api/v2/pokemon/675/,"fighting, dark",21,1360,7
+furfrou,676,https://pokeapi.co/api/v2/pokemon/676/,normal,12,280,7
+espurr,677,https://pokeapi.co/api/v2/pokemon/677/,psychic,3,35,6
+meowstic-male,678,https://pokeapi.co/api/v2/pokemon/678/,psychic,6,85,13
+honedge,679,https://pokeapi.co/api/v2/pokemon/679/,"steel, ghost",8,20,7
+doublade,680,https://pokeapi.co/api/v2/pokemon/680/,"steel, ghost",8,45,8
+aegislash-shield,681,https://pokeapi.co/api/v2/pokemon/681/,"steel, ghost",17,530,16
+spritzee,682,https://pokeapi.co/api/v2/pokemon/682/,fairy,2,5,8
+aromatisse,683,https://pokeapi.co/api/v2/pokemon/683/,fairy,8,155,10
+swirlix,684,https://pokeapi.co/api/v2/pokemon/684/,fairy,4,35,7
+slurpuff,685,https://pokeapi.co/api/v2/pokemon/685/,fairy,8,50,8
+inkay,686,https://pokeapi.co/api/v2/pokemon/686/,"dark, psychic",4,35,5
+malamar,687,https://pokeapi.co/api/v2/pokemon/687/,"dark, psychic",15,470,7
+binacle,688,https://pokeapi.co/api/v2/pokemon/688/,"rock, water",5,310,7
+barbaracle,689,https://pokeapi.co/api/v2/pokemon/689/,"rock, water",13,960,10
+skrelp,690,https://pokeapi.co/api/v2/pokemon/690/,"poison, water",5,73,6
+dragalge,691,https://pokeapi.co/api/v2/pokemon/691/,"poison, dragon",18,815,8
+clauncher,692,https://pokeapi.co/api/v2/pokemon/692/,water,5,83,9
+clawitzer,693,https://pokeapi.co/api/v2/pokemon/693/,water,13,353,9
+helioptile,694,https://pokeapi.co/api/v2/pokemon/694/,"electric, normal",5,60,10
+heliolisk,695,https://pokeapi.co/api/v2/pokemon/695/,"electric, normal",10,210,9
+tyrunt,696,https://pokeapi.co/api/v2/pokemon/696/,"rock, dragon",8,260,6
+tyrantrum,697,https://pokeapi.co/api/v2/pokemon/697/,"rock, dragon",25,2700,9
+amaura,698,https://pokeapi.co/api/v2/pokemon/698/,"rock, ice",13,252,6
+aurorus,699,https://pokeapi.co/api/v2/pokemon/699/,"rock, ice",27,2250,7
+sylveon,700,https://pokeapi.co/api/v2/pokemon/700/,fairy,10,235,7
+hawlucha,701,https://pokeapi.co/api/v2/pokemon/701/,"fighting, flying",8,215,8
+dedenne,702,https://pokeapi.co/api/v2/pokemon/702/,"electric, fairy",2,22,7
+carbink,703,https://pokeapi.co/api/v2/pokemon/703/,"rock, fairy",3,57,7
+goomy,704,https://pokeapi.co/api/v2/pokemon/704/,dragon,3,28,5
+sliggoo,705,https://pokeapi.co/api/v2/pokemon/705/,dragon,8,175,7
+goodra,706,https://pokeapi.co/api/v2/pokemon/706/,dragon,20,1505,6
+klefki,707,https://pokeapi.co/api/v2/pokemon/707/,"steel, fairy",2,30,6
+phantump,708,https://pokeapi.co/api/v2/pokemon/708/,"ghost, grass",4,70,8
+trevenant,709,https://pokeapi.co/api/v2/pokemon/709/,"ghost, grass",15,710,9
+pumpkaboo-average,710,https://pokeapi.co/api/v2/pokemon/710/,"ghost, grass",4,50,17
+gourgeist-average,711,https://pokeapi.co/api/v2/pokemon/711/,"ghost, grass",9,125,17
+bergmite,712,https://pokeapi.co/api/v2/pokemon/712/,ice,10,995,8
+avalugg,713,https://pokeapi.co/api/v2/pokemon/713/,ice,20,5050,7
+noibat,714,https://pokeapi.co/api/v2/pokemon/714/,"flying, dragon",5,80,6
+noivern,715,https://pokeapi.co/api/v2/pokemon/715/,"flying, dragon",15,850,7
+xerneas,716,https://pokeapi.co/api/v2/pokemon/716/,fairy,30,2150,7
+yveltal,717,https://pokeapi.co/api/v2/pokemon/717/,"dark, flying",58,2030,7
+zygarde-50,718,https://pokeapi.co/api/v2/pokemon/718/,"dragon, ground",50,3050,10
+diancie,719,https://pokeapi.co/api/v2/pokemon/719/,"rock, fairy",7,88,7
+hoopa,720,https://pokeapi.co/api/v2/pokemon/720/,"psychic, ghost",5,90,5
+volcanion,721,https://pokeapi.co/api/v2/pokemon/721/,"fire, water",17,1950,9
+rowlet,722,https://pokeapi.co/api/v2/pokemon/722/,"grass, flying",3,15,6
+dartrix,723,https://pokeapi.co/api/v2/pokemon/723/,"grass, flying",7,160,7
+decidueye,724,https://pokeapi.co/api/v2/pokemon/724/,"grass, ghost",16,366,9
+litten,725,https://pokeapi.co/api/v2/pokemon/725/,fire,4,43,6
+torracat,726,https://pokeapi.co/api/v2/pokemon/726/,fire,7,250,8
+incineroar,727,https://pokeapi.co/api/v2/pokemon/727/,"fire, dark",18,830,10
+popplio,728,https://pokeapi.co/api/v2/pokemon/728/,water,4,75,7
+brionne,729,https://pokeapi.co/api/v2/pokemon/729/,water,6,175,7
+primarina,730,https://pokeapi.co/api/v2/pokemon/730/,"water, fairy",18,440,9
+pikipek,731,https://pokeapi.co/api/v2/pokemon/731/,"normal, flying",3,12,7
+trumbeak,732,https://pokeapi.co/api/v2/pokemon/732/,"normal, flying",6,148,8
+toucannon,733,https://pokeapi.co/api/v2/pokemon/733/,"normal, flying",11,260,9
+yungoos,734,https://pokeapi.co/api/v2/pokemon/734/,normal,4,60,7
+gumshoos,735,https://pokeapi.co/api/v2/pokemon/735/,normal,7,142,8
+grubbin,736,https://pokeapi.co/api/v2/pokemon/736/,bug,4,44,7
+charjabug,737,https://pokeapi.co/api/v2/pokemon/737/,"bug, electric",5,105,9
+vikavolt,738,https://pokeapi.co/api/v2/pokemon/738/,"bug, electric",15,450,8
+crabrawler,739,https://pokeapi.co/api/v2/pokemon/739/,fighting,6,70,10
+crabominable,740,https://pokeapi.co/api/v2/pokemon/740/,"fighting, ice",17,1800,12
+oricorio-baile,741,https://pokeapi.co/api/v2/pokemon/741/,"fire, flying",6,34,14
+cutiefly,742,https://pokeapi.co/api/v2/pokemon/742/,"bug, fairy",1,2,8
+ribombee,743,https://pokeapi.co/api/v2/pokemon/743/,"bug, fairy",2,5,8
+rockruff,744,https://pokeapi.co/api/v2/pokemon/744/,rock,5,92,8
+lycanroc-midday,745,https://pokeapi.co/api/v2/pokemon/745/,rock,8,250,15
+wishiwashi-solo,746,https://pokeapi.co/api/v2/pokemon/746/,water,2,3,15
+mareanie,747,https://pokeapi.co/api/v2/pokemon/747/,"poison, water",4,80,8
+toxapex,748,https://pokeapi.co/api/v2/pokemon/748/,"poison, water",7,145,7
+mudbray,749,https://pokeapi.co/api/v2/pokemon/749/,ground,10,1100,7
+mudsdale,750,https://pokeapi.co/api/v2/pokemon/750/,ground,25,9200,8
+dewpider,751,https://pokeapi.co/api/v2/pokemon/751/,"water, bug",3,40,8
+araquanid,752,https://pokeapi.co/api/v2/pokemon/752/,"water, bug",18,820,9
+fomantis,753,https://pokeapi.co/api/v2/pokemon/753/,grass,3,15,8
+lurantis,754,https://pokeapi.co/api/v2/pokemon/754/,grass,9,185,8
+morelull,755,https://pokeapi.co/api/v2/pokemon/755/,"grass, fairy",2,15,8
+shiinotic,756,https://pokeapi.co/api/v2/pokemon/756/,"grass, fairy",10,115,9
+salandit,757,https://pokeapi.co/api/v2/pokemon/757/,"poison, fire",6,48,8
+salazzle,758,https://pokeapi.co/api/v2/pokemon/758/,"poison, fire",12,222,8
+stufful,759,https://pokeapi.co/api/v2/pokemon/759/,"normal, fighting",5,68,7
+bewear,760,https://pokeapi.co/api/v2/pokemon/760/,"normal, fighting",21,1350,6
+bounsweet,761,https://pokeapi.co/api/v2/pokemon/761/,grass,3,32,9
+steenee,762,https://pokeapi.co/api/v2/pokemon/762/,grass,7,82,7
+tsareena,763,https://pokeapi.co/api/v2/pokemon/763/,grass,12,214,8
+comfey,764,https://pokeapi.co/api/v2/pokemon/764/,fairy,1,3,6
+oranguru,765,https://pokeapi.co/api/v2/pokemon/765/,"normal, psychic",15,760,8
+passimian,766,https://pokeapi.co/api/v2/pokemon/766/,fighting,20,828,9
+wimpod,767,https://pokeapi.co/api/v2/pokemon/767/,"bug, water",5,120,6
+golisopod,768,https://pokeapi.co/api/v2/pokemon/768/,"bug, water",20,1080,9
+sandygast,769,https://pokeapi.co/api/v2/pokemon/769/,"ghost, ground",5,700,9
+palossand,770,https://pokeapi.co/api/v2/pokemon/770/,"ghost, ground",13,2500,9
+pyukumuku,771,https://pokeapi.co/api/v2/pokemon/771/,water,3,12,9
+type-null,772,https://pokeapi.co/api/v2/pokemon/772/,normal,19,1205,9
+silvally,773,https://pokeapi.co/api/v2/pokemon/773/,normal,23,1005,8
+minior-red-meteor,774,https://pokeapi.co/api/v2/pokemon/774/,"rock, flying",3,400,17
+komala,775,https://pokeapi.co/api/v2/pokemon/775/,normal,4,199,6
+turtonator,776,https://pokeapi.co/api/v2/pokemon/776/,"fire, dragon",20,2120,10
+togedemaru,777,https://pokeapi.co/api/v2/pokemon/777/,"electric, steel",3,33,10
+mimikyu-disguised,778,https://pokeapi.co/api/v2/pokemon/778/,"ghost, fairy",2,7,17
+bruxish,779,https://pokeapi.co/api/v2/pokemon/779/,"water, psychic",9,190,7
+drampa,780,https://pokeapi.co/api/v2/pokemon/780/,"normal, dragon",30,1850,6
+dhelmise,781,https://pokeapi.co/api/v2/pokemon/781/,"ghost, grass",39,2100,8
+jangmo-o,782,https://pokeapi.co/api/v2/pokemon/782/,dragon,6,297,8
+hakamo-o,783,https://pokeapi.co/api/v2/pokemon/783/,"dragon, fighting",12,470,8
+kommo-o,784,https://pokeapi.co/api/v2/pokemon/784/,"dragon, fighting",16,782,7
+tapu-koko,785,https://pokeapi.co/api/v2/pokemon/785/,"electric, fairy",18,205,9
+tapu-lele,786,https://pokeapi.co/api/v2/pokemon/786/,"psychic, fairy",12,186,9
+tapu-bulu,787,https://pokeapi.co/api/v2/pokemon/787/,"grass, fairy",19,455,9
+tapu-fini,788,https://pokeapi.co/api/v2/pokemon/788/,"water, fairy",13,212,9
+cosmog,789,https://pokeapi.co/api/v2/pokemon/789/,psychic,2,1,6
+cosmoem,790,https://pokeapi.co/api/v2/pokemon/790/,psychic,1,9999,7
+solgaleo,791,https://pokeapi.co/api/v2/pokemon/791/,"psychic, steel",34,2300,8
+lunala,792,https://pokeapi.co/api/v2/pokemon/792/,"psychic, ghost",40,1200,6
+nihilego,793,https://pokeapi.co/api/v2/pokemon/793/,"rock, poison",12,555,8
+buzzwole,794,https://pokeapi.co/api/v2/pokemon/794/,"bug, fighting",24,3336,8
+pheromosa,795,https://pokeapi.co/api/v2/pokemon/795/,"bug, fighting",18,250,9
+xurkitree,796,https://pokeapi.co/api/v2/pokemon/796/,electric,38,1000,9
+celesteela,797,https://pokeapi.co/api/v2/pokemon/797/,"steel, flying",92,9999,10
+kartana,798,https://pokeapi.co/api/v2/pokemon/798/,"grass, steel",3,1,7
+guzzlord,799,https://pokeapi.co/api/v2/pokemon/799/,"dark, dragon",55,8880,8
+necrozma,800,https://pokeapi.co/api/v2/pokemon/800/,psychic,24,2300,8
+magearna,801,https://pokeapi.co/api/v2/pokemon/801/,"steel, fairy",10,805,8
+marshadow,802,https://pokeapi.co/api/v2/pokemon/802/,"fighting, ghost",7,222,9
+poipole,803,https://pokeapi.co/api/v2/pokemon/803/,poison,6,18,7
+naganadel,804,https://pokeapi.co/api/v2/pokemon/804/,"poison, dragon",36,1500,9
+stakataka,805,https://pokeapi.co/api/v2/pokemon/805/,"rock, steel",55,8200,9
+blacephalon,806,https://pokeapi.co/api/v2/pokemon/806/,"fire, ghost",18,130,11
+zeraora,807,https://pokeapi.co/api/v2/pokemon/807/,electric,15,445,7
+meltan,808,https://pokeapi.co/api/v2/pokemon/808/,steel,2,80,6
+melmetal,809,https://pokeapi.co/api/v2/pokemon/809/,steel,25,8000,8
+grookey,810,https://pokeapi.co/api/v2/pokemon/810/,grass,3,50,7
+thwackey,811,https://pokeapi.co/api/v2/pokemon/811/,grass,7,140,8
+rillaboom,812,https://pokeapi.co/api/v2/pokemon/812/,grass,21,900,9
+scorbunny,813,https://pokeapi.co/api/v2/pokemon/813/,fire,3,45,9
+raboot,814,https://pokeapi.co/api/v2/pokemon/814/,fire,6,90,6
+cinderace,815,https://pokeapi.co/api/v2/pokemon/815/,fire,14,330,9
+sobble,816,https://pokeapi.co/api/v2/pokemon/816/,water,3,40,6
+drizzile,817,https://pokeapi.co/api/v2/pokemon/817/,water,7,115,8
+inteleon,818,https://pokeapi.co/api/v2/pokemon/818/,water,19,452,8
+skwovet,819,https://pokeapi.co/api/v2/pokemon/819/,normal,3,25,7
+greedent,820,https://pokeapi.co/api/v2/pokemon/820/,normal,6,60,8
+rookidee,821,https://pokeapi.co/api/v2/pokemon/821/,flying,2,18,8
+corvisquire,822,https://pokeapi.co/api/v2/pokemon/822/,flying,8,160,11
+corviknight,823,https://pokeapi.co/api/v2/pokemon/823/,"flying, steel",22,750,11
+blipbug,824,https://pokeapi.co/api/v2/pokemon/824/,bug,4,80,7
+dottler,825,https://pokeapi.co/api/v2/pokemon/825/,"bug, psychic",4,195,7
+orbeetle,826,https://pokeapi.co/api/v2/pokemon/826/,"bug, psychic",4,408,8
+nickit,827,https://pokeapi.co/api/v2/pokemon/827/,dark,6,89,6
+thievul,828,https://pokeapi.co/api/v2/pokemon/828/,dark,12,199,7
+gossifleur,829,https://pokeapi.co/api/v2/pokemon/829/,grass,4,22,10
+eldegoss,830,https://pokeapi.co/api/v2/pokemon/830/,grass,5,25,8
+wooloo,831,https://pokeapi.co/api/v2/pokemon/831/,normal,6,60,6
+dubwool,832,https://pokeapi.co/api/v2/pokemon/832/,normal,13,430,7
+chewtle,833,https://pokeapi.co/api/v2/pokemon/833/,water,3,85,7
+drednaw,834,https://pokeapi.co/api/v2/pokemon/834/,"water, rock",10,1155,7
+yamper,835,https://pokeapi.co/api/v2/pokemon/835/,electric,3,135,6
+boltund,836,https://pokeapi.co/api/v2/pokemon/836/,electric,10,340,7
+rolycoly,837,https://pokeapi.co/api/v2/pokemon/837/,rock,3,120,8
+carkol,838,https://pokeapi.co/api/v2/pokemon/838/,"rock, fire",11,780,6
+coalossal,839,https://pokeapi.co/api/v2/pokemon/839/,"rock, fire",28,3105,9
+applin,840,https://pokeapi.co/api/v2/pokemon/840/,"grass, dragon",2,5,6
+flapple,841,https://pokeapi.co/api/v2/pokemon/841/,"grass, dragon",3,10,7
+appletun,842,https://pokeapi.co/api/v2/pokemon/842/,"grass, dragon",4,130,8
+silicobra,843,https://pokeapi.co/api/v2/pokemon/843/,ground,22,76,9
+sandaconda,844,https://pokeapi.co/api/v2/pokemon/844/,ground,38,655,10
+cramorant,845,https://pokeapi.co/api/v2/pokemon/845/,"flying, water",8,180,9
+arrokuda,846,https://pokeapi.co/api/v2/pokemon/846/,water,5,10,8
+barraskewda,847,https://pokeapi.co/api/v2/pokemon/847/,water,13,300,11
+toxel,848,https://pokeapi.co/api/v2/pokemon/848/,"electric, poison",4,110,5
+toxtricity-amped,849,https://pokeapi.co/api/v2/pokemon/849/,"electric, poison",16,400,16
+sizzlipede,850,https://pokeapi.co/api/v2/pokemon/850/,"fire, bug",7,10,10
+centiskorch,851,https://pokeapi.co/api/v2/pokemon/851/,"fire, bug",30,1200,11
+clobbopus,852,https://pokeapi.co/api/v2/pokemon/852/,fighting,6,40,9
+grapploct,853,https://pokeapi.co/api/v2/pokemon/853/,fighting,16,390,9
+sinistea,854,https://pokeapi.co/api/v2/pokemon/854/,ghost,1,2,8
+polteageist,855,https://pokeapi.co/api/v2/pokemon/855/,ghost,2,4,11
+hatenna,856,https://pokeapi.co/api/v2/pokemon/856/,psychic,4,34,7
+hattrem,857,https://pokeapi.co/api/v2/pokemon/857/,psychic,6,48,7
+hatterene,858,https://pokeapi.co/api/v2/pokemon/858/,"psychic, fairy",21,51,9
+impidimp,859,https://pokeapi.co/api/v2/pokemon/859/,"dark, fairy",4,55,8
+morgrem,860,https://pokeapi.co/api/v2/pokemon/860/,"dark, fairy",8,125,7
+grimmsnarl,861,https://pokeapi.co/api/v2/pokemon/861/,"dark, fairy",15,610,10
+obstagoon,862,https://pokeapi.co/api/v2/pokemon/862/,"dark, normal",16,460,9
+perrserker,863,https://pokeapi.co/api/v2/pokemon/863/,steel,8,280,10
+cursola,864,https://pokeapi.co/api/v2/pokemon/864/,ghost,10,4,7
+sirfetchd,865,https://pokeapi.co/api/v2/pokemon/865/,fighting,8,1170,9
+mr-rime,866,https://pokeapi.co/api/v2/pokemon/866/,"ice, psychic",15,582,7
+runerigus,867,https://pokeapi.co/api/v2/pokemon/867/,"ground, ghost",16,666,9
+milcery,868,https://pokeapi.co/api/v2/pokemon/868/,fairy,2,3,7
+alcremie,869,https://pokeapi.co/api/v2/pokemon/869/,fairy,3,5,8
+falinks,870,https://pokeapi.co/api/v2/pokemon/870/,fighting,30,620,7
+pincurchin,871,https://pokeapi.co/api/v2/pokemon/871/,electric,3,10,10
+snom,872,https://pokeapi.co/api/v2/pokemon/872/,"ice, bug",3,38,4
+frosmoth,873,https://pokeapi.co/api/v2/pokemon/873/,"ice, bug",13,420,8
+stonjourner,874,https://pokeapi.co/api/v2/pokemon/874/,rock,25,5200,11
+eiscue-ice,875,https://pokeapi.co/api/v2/pokemon/875/,ice,14,890,10
+indeedee-male,876,https://pokeapi.co/api/v2/pokemon/876/,"psychic, normal",9,280,13
+morpeko-full-belly,877,https://pokeapi.co/api/v2/pokemon/877/,"electric, dark",3,30,18
+cufant,878,https://pokeapi.co/api/v2/pokemon/878/,steel,12,1000,6
+copperajah,879,https://pokeapi.co/api/v2/pokemon/879/,steel,30,6500,10
+dracozolt,880,https://pokeapi.co/api/v2/pokemon/880/,"electric, dragon",18,1900,9
+arctozolt,881,https://pokeapi.co/api/v2/pokemon/881/,"electric, ice",23,1500,9
+dracovish,882,https://pokeapi.co/api/v2/pokemon/882/,"water, dragon",23,2150,9
+arctovish,883,https://pokeapi.co/api/v2/pokemon/883/,"water, ice",20,1750,9
+duraludon,884,https://pokeapi.co/api/v2/pokemon/884/,"steel, dragon",18,400,9
+dreepy,885,https://pokeapi.co/api/v2/pokemon/885/,"dragon, ghost",5,20,6
+drakloak,886,https://pokeapi.co/api/v2/pokemon/886/,"dragon, ghost",14,110,8
+dragapult,887,https://pokeapi.co/api/v2/pokemon/887/,"dragon, ghost",30,500,9
+zacian,888,https://pokeapi.co/api/v2/pokemon/888/,fairy,28,1100,6
+zamazenta,889,https://pokeapi.co/api/v2/pokemon/889/,fighting,29,2100,9
+eternatus,890,https://pokeapi.co/api/v2/pokemon/890/,"poison, dragon",200,9500,9
+kubfu,891,https://pokeapi.co/api/v2/pokemon/891/,fighting,6,120,5
+urshifu-single-strike,892,https://pokeapi.co/api/v2/pokemon/892/,"fighting, dark",19,1050,21
+zarude,893,https://pokeapi.co/api/v2/pokemon/893/,"dark, grass",18,700,6
+regieleki,894,https://pokeapi.co/api/v2/pokemon/894/,electric,12,1450,9
+regidrago,895,https://pokeapi.co/api/v2/pokemon/895/,dragon,21,2000,9
+glastrier,896,https://pokeapi.co/api/v2/pokemon/896/,ice,22,8000,9
+spectrier,897,https://pokeapi.co/api/v2/pokemon/897/,ghost,20,445,9
+calyrex,898,https://pokeapi.co/api/v2/pokemon/898/,"psychic, grass",11,77,7
+wyrdeer,899,https://pokeapi.co/api/v2/pokemon/899/,"normal, psychic",18,951,7
+kleavor,900,https://pokeapi.co/api/v2/pokemon/900/,"bug, rock",18,890,7
+ursaluna,901,https://pokeapi.co/api/v2/pokemon/901/,"ground, normal",24,2900,8
+basculegion-male,902,https://pokeapi.co/api/v2/pokemon/902/,"water, ghost",30,1100,16
+sneasler,903,https://pokeapi.co/api/v2/pokemon/903/,"fighting, poison",13,430,8
+overqwil,904,https://pokeapi.co/api/v2/pokemon/904/,"dark, poison",25,605,8
+enamorus-incarnate,905,https://pokeapi.co/api/v2/pokemon/905/,"fairy, flying",16,480,18
+sprigatito,906,https://pokeapi.co/api/v2/pokemon/906/,grass,4,41,10
+floragato,907,https://pokeapi.co/api/v2/pokemon/907/,grass,9,122,9
+meowscarada,908,https://pokeapi.co/api/v2/pokemon/908/,"grass, dark",15,312,11
+fuecoco,909,https://pokeapi.co/api/v2/pokemon/909/,fire,4,98,7
+crocalor,910,https://pokeapi.co/api/v2/pokemon/910/,fire,10,307,8
+skeledirge,911,https://pokeapi.co/api/v2/pokemon/911/,"fire, ghost",16,3265,10
+quaxly,912,https://pokeapi.co/api/v2/pokemon/912/,water,5,61,6
+quaxwell,913,https://pokeapi.co/api/v2/pokemon/913/,water,12,215,8
+quaquaval,914,https://pokeapi.co/api/v2/pokemon/914/,"water, fighting",18,619,9
+lechonk,915,https://pokeapi.co/api/v2/pokemon/915/,normal,5,102,7
+oinkologne-male,916,https://pokeapi.co/api/v2/pokemon/916/,normal,10,1200,15
+tarountula,917,https://pokeapi.co/api/v2/pokemon/917/,bug,3,40,10
+spidops,918,https://pokeapi.co/api/v2/pokemon/918/,bug,10,165,7
+nymble,919,https://pokeapi.co/api/v2/pokemon/919/,bug,2,10,6
+lokix,920,https://pokeapi.co/api/v2/pokemon/920/,"bug, dark",10,175,5
+pawmi,921,https://pokeapi.co/api/v2/pokemon/921/,electric,3,25,5
+pawmo,922,https://pokeapi.co/api/v2/pokemon/922/,"electric, fighting",4,65,5
+pawmot,923,https://pokeapi.co/api/v2/pokemon/923/,"electric, fighting",9,410,6
+tandemaus,924,https://pokeapi.co/api/v2/pokemon/924/,normal,3,18,9
+maushold-family-of-four,925,https://pokeapi.co/api/v2/pokemon/925/,normal,3,23,23
+fidough,926,https://pokeapi.co/api/v2/pokemon/926/,fairy,3,109,7
+dachsbun,927,https://pokeapi.co/api/v2/pokemon/927/,fairy,5,149,8
+smoliv,928,https://pokeapi.co/api/v2/pokemon/928/,"grass, normal",3,65,6
+dolliv,929,https://pokeapi.co/api/v2/pokemon/929/,"grass, normal",6,119,6
+arboliva,930,https://pokeapi.co/api/v2/pokemon/930/,"grass, normal",14,482,8
+squawkabilly-green-plumage,931,https://pokeapi.co/api/v2/pokemon/931/,"normal, flying",6,24,26
+nacli,932,https://pokeapi.co/api/v2/pokemon/932/,rock,4,160,5
+naclstack,933,https://pokeapi.co/api/v2/pokemon/933/,rock,6,1050,9
+garganacl,934,https://pokeapi.co/api/v2/pokemon/934/,rock,23,2400,9
+charcadet,935,https://pokeapi.co/api/v2/pokemon/935/,fire,6,105,9
+armarouge,936,https://pokeapi.co/api/v2/pokemon/936/,"fire, psychic",15,850,9
+ceruledge,937,https://pokeapi.co/api/v2/pokemon/937/,"fire, ghost",16,620,9
+tadbulb,938,https://pokeapi.co/api/v2/pokemon/938/,electric,3,4,7
+bellibolt,939,https://pokeapi.co/api/v2/pokemon/939/,electric,12,1130,9
+wattrel,940,https://pokeapi.co/api/v2/pokemon/940/,"electric, flying",4,36,7
+kilowattrel,941,https://pokeapi.co/api/v2/pokemon/941/,"electric, flying",14,386,11
+maschiff,942,https://pokeapi.co/api/v2/pokemon/942/,dark,5,160,8
+mabosstiff,943,https://pokeapi.co/api/v2/pokemon/943/,dark,11,610,10
+shroodle,944,https://pokeapi.co/api/v2/pokemon/944/,"poison, normal",2,7,8
+grafaiai,945,https://pokeapi.co/api/v2/pokemon/945/,"poison, normal",7,272,8
+bramblin,946,https://pokeapi.co/api/v2/pokemon/946/,"grass, ghost",6,6,8
+brambleghast,947,https://pokeapi.co/api/v2/pokemon/947/,"grass, ghost",12,60,12
+toedscool,948,https://pokeapi.co/api/v2/pokemon/948/,"ground, grass",9,330,9
+toedscruel,949,https://pokeapi.co/api/v2/pokemon/949/,"ground, grass",19,580,10
+klawf,950,https://pokeapi.co/api/v2/pokemon/950/,rock,13,790,5
+capsakid,951,https://pokeapi.co/api/v2/pokemon/951/,grass,3,30,8
+scovillain,952,https://pokeapi.co/api/v2/pokemon/952/,"grass, fire",9,150,10
+rellor,953,https://pokeapi.co/api/v2/pokemon/953/,bug,2,10,6
+rabsca,954,https://pokeapi.co/api/v2/pokemon/954/,"bug, psychic",3,35,6
+flittle,955,https://pokeapi.co/api/v2/pokemon/955/,psychic,2,15,7
+espathra,956,https://pokeapi.co/api/v2/pokemon/956/,psychic,19,900,8
+tinkatink,957,https://pokeapi.co/api/v2/pokemon/957/,"fairy, steel",4,89,9
+tinkatuff,958,https://pokeapi.co/api/v2/pokemon/958/,"fairy, steel",7,591,9
+tinkaton,959,https://pokeapi.co/api/v2/pokemon/959/,"fairy, steel",7,1128,8
+wiglett,960,https://pokeapi.co/api/v2/pokemon/960/,water,12,18,7
+wugtrio,961,https://pokeapi.co/api/v2/pokemon/961/,water,12,54,7
+bombirdier,962,https://pokeapi.co/api/v2/pokemon/962/,"flying, dark",15,429,10
+finizen,963,https://pokeapi.co/api/v2/pokemon/963/,water,13,602,7
+palafin-zero,964,https://pokeapi.co/api/v2/pokemon/964/,water,13,602,12
+varoom,965,https://pokeapi.co/api/v2/pokemon/965/,"steel, poison",10,350,6
+revavroom,966,https://pokeapi.co/api/v2/pokemon/966/,"steel, poison",18,1200,9
+cyclizar,967,https://pokeapi.co/api/v2/pokemon/967/,"dragon, normal",16,630,8
+orthworm,968,https://pokeapi.co/api/v2/pokemon/968/,steel,25,3100,8
+glimmet,969,https://pokeapi.co/api/v2/pokemon/969/,"rock, poison",7,80,7
+glimmora,970,https://pokeapi.co/api/v2/pokemon/970/,"rock, poison",15,450,8
+greavard,971,https://pokeapi.co/api/v2/pokemon/971/,ghost,6,350,8
+houndstone,972,https://pokeapi.co/api/v2/pokemon/972/,ghost,20,150,10
+flamigo,973,https://pokeapi.co/api/v2/pokemon/973/,"flying, fighting",16,370,7
+cetoddle,974,https://pokeapi.co/api/v2/pokemon/974/,ice,12,450,8
+cetitan,975,https://pokeapi.co/api/v2/pokemon/975/,ice,45,7000,7
+veluza,976,https://pokeapi.co/api/v2/pokemon/976/,"water, psychic",25,900,6
+dondozo,977,https://pokeapi.co/api/v2/pokemon/977/,water,120,2200,7
+tatsugiri-curly,978,https://pokeapi.co/api/v2/pokemon/978/,"dragon, water",3,80,15
+annihilape,979,https://pokeapi.co/api/v2/pokemon/979/,"fighting, ghost",12,560,10
+clodsire,980,https://pokeapi.co/api/v2/pokemon/980/,"poison, ground",18,2230,8
+farigiraf,981,https://pokeapi.co/api/v2/pokemon/981/,"normal, psychic",32,1600,9
+dudunsparce-two-segment,982,https://pokeapi.co/api/v2/pokemon/982/,normal,36,392,23
+kingambit,983,https://pokeapi.co/api/v2/pokemon/983/,"dark, steel",20,1200,9
+great-tusk,984,https://pokeapi.co/api/v2/pokemon/984/,"ground, fighting",22,3200,10
+scream-tail,985,https://pokeapi.co/api/v2/pokemon/985/,"fairy, psychic",12,80,11
+brute-bonnet,986,https://pokeapi.co/api/v2/pokemon/986/,"grass, dark",12,210,12
+flutter-mane,987,https://pokeapi.co/api/v2/pokemon/987/,"ghost, fairy",14,40,12
+slither-wing,988,https://pokeapi.co/api/v2/pokemon/988/,"bug, fighting",32,920,12
+sandy-shocks,989,https://pokeapi.co/api/v2/pokemon/989/,"electric, ground",23,600,12
+iron-treads,990,https://pokeapi.co/api/v2/pokemon/990/,"ground, steel",9,2400,11
+iron-bundle,991,https://pokeapi.co/api/v2/pokemon/991/,"ice, water",6,110,11
+iron-hands,992,https://pokeapi.co/api/v2/pokemon/992/,"fighting, electric",18,3807,10
+iron-jugulis,993,https://pokeapi.co/api/v2/pokemon/993/,"dark, flying",13,1110,12
+iron-moth,994,https://pokeapi.co/api/v2/pokemon/994/,"fire, poison",12,360,9
+iron-thorns,995,https://pokeapi.co/api/v2/pokemon/995/,"rock, electric",16,3030,11
+frigibax,996,https://pokeapi.co/api/v2/pokemon/996/,"dragon, ice",5,170,8
+arctibax,997,https://pokeapi.co/api/v2/pokemon/997/,"dragon, ice",8,300,8
+baxcalibur,998,https://pokeapi.co/api/v2/pokemon/998/,"dragon, ice",21,2100,10
+gimmighoul,999,https://pokeapi.co/api/v2/pokemon/999/,ghost,3,50,10
+gholdengo,1000,https://pokeapi.co/api/v2/pokemon/1000/,"steel, ghost",12,300,9
+wo-chien,1001,https://pokeapi.co/api/v2/pokemon/1001/,"dark, grass",15,742,8
+chien-pao,1002,https://pokeapi.co/api/v2/pokemon/1002/,"dark, ice",19,1522,9
+ting-lu,1003,https://pokeapi.co/api/v2/pokemon/1003/,"dark, ground",27,6997,7
+chi-yu,1004,https://pokeapi.co/api/v2/pokemon/1004/,"dark, fire",4,49,6
+roaring-moon,1005,https://pokeapi.co/api/v2/pokemon/1005/,"dragon, dark",20,3800,12
+iron-valiant,1006,https://pokeapi.co/api/v2/pokemon/1006/,"fairy, fighting",14,350,12
+koraidon,1007,https://pokeapi.co/api/v2/pokemon/1007/,"fighting, dragon",25,3030,8
+miraidon,1008,https://pokeapi.co/api/v2/pokemon/1008/,"electric, dragon",35,2400,8
+walking-wake,1009,https://pokeapi.co/api/v2/pokemon/1009/,"water, dragon",35,2800,12
+iron-leaves,1010,https://pokeapi.co/api/v2/pokemon/1010/,"grass, psychic",15,1250,11
+dipplin,1011,https://pokeapi.co/api/v2/pokemon/1011/,"grass, dragon",4,97,7
+poltchageist,1012,https://pokeapi.co/api/v2/pokemon/1012/,"grass, ghost",1,11,12
+sinistcha,1013,https://pokeapi.co/api/v2/pokemon/1013/,"grass, ghost",2,22,9
+okidogi,1014,https://pokeapi.co/api/v2/pokemon/1014/,"poison, fighting",18,922,7
+munkidori,1015,https://pokeapi.co/api/v2/pokemon/1015/,"poison, psychic",10,122,9
+fezandipiti,1016,https://pokeapi.co/api/v2/pokemon/1016/,"poison, fairy",14,301,11
+ogerpon,1017,https://pokeapi.co/api/v2/pokemon/1017/,grass,12,398,7
+archaludon,1018,https://pokeapi.co/api/v2/pokemon/1018/,"steel, dragon",20,600,10
+hydrapple,1019,https://pokeapi.co/api/v2/pokemon/1019/,"grass, dragon",18,930,9
+gouging-fire,1020,https://pokeapi.co/api/v2/pokemon/1020/,"fire, dragon",35,5900,12
+raging-bolt,1021,https://pokeapi.co/api/v2/pokemon/1021/,"electric, dragon",52,4800,11
+iron-boulder,1022,https://pokeapi.co/api/v2/pokemon/1022/,"rock, psychic",15,1625,12
+iron-crown,1023,https://pokeapi.co/api/v2/pokemon/1023/,"steel, psychic",16,1560,10
+terapagos,1024,https://pokeapi.co/api/v2/pokemon/1024/,normal,2,65,9
+pecharunt,1025,https://pokeapi.co/api/v2/pokemon/1025/,"poison, ghost",3,3,9
+deoxys-attack,10001,https://pokeapi.co/api/v2/pokemon/10001/,psychic,17,608,13
+deoxys-defense,10002,https://pokeapi.co/api/v2/pokemon/10002/,psychic,17,608,14
+deoxys-speed,10003,https://pokeapi.co/api/v2/pokemon/10003/,psychic,17,608,12
+wormadam-sandy,10004,https://pokeapi.co/api/v2/pokemon/10004/,"bug, ground",5,65,14
+wormadam-trash,10005,https://pokeapi.co/api/v2/pokemon/10005/,"bug, steel",5,65,14
+shaymin-sky,10006,https://pokeapi.co/api/v2/pokemon/10006/,"grass, flying",4,52,11
+giratina-origin,10007,https://pokeapi.co/api/v2/pokemon/10007/,"ghost, dragon",69,6500,15
+rotom-heat,10008,https://pokeapi.co/api/v2/pokemon/10008/,"electric, fire",3,3,10
+rotom-wash,10009,https://pokeapi.co/api/v2/pokemon/10009/,"electric, water",3,3,10
+rotom-frost,10010,https://pokeapi.co/api/v2/pokemon/10010/,"electric, ice",3,3,11
+rotom-fan,10011,https://pokeapi.co/api/v2/pokemon/10011/,"electric, flying",3,3,9
+rotom-mow,10012,https://pokeapi.co/api/v2/pokemon/10012/,"electric, grass",3,3,9
+castform-sunny,10013,https://pokeapi.co/api/v2/pokemon/10013/,fire,3,8,14
+castform-rainy,10014,https://pokeapi.co/api/v2/pokemon/10014/,water,3,8,14
+castform-snowy,10015,https://pokeapi.co/api/v2/pokemon/10015/,ice,3,8,14
+basculin-blue-striped,10016,https://pokeapi.co/api/v2/pokemon/10016/,water,10,180,21
+darmanitan-zen,10017,https://pokeapi.co/api/v2/pokemon/10017/,"fire, psychic",13,929,14
+meloetta-pirouette,10018,https://pokeapi.co/api/v2/pokemon/10018/,"normal, fighting",6,65,18
+tornadus-therian,10019,https://pokeapi.co/api/v2/pokemon/10019/,flying,14,630,16
+thundurus-therian,10020,https://pokeapi.co/api/v2/pokemon/10020/,"electric, flying",30,610,17
+landorus-therian,10021,https://pokeapi.co/api/v2/pokemon/10021/,"ground, flying",13,680,16
+kyurem-black,10022,https://pokeapi.co/api/v2/pokemon/10022/,"dragon, ice",33,3250,12
+kyurem-white,10023,https://pokeapi.co/api/v2/pokemon/10023/,"dragon, ice",36,3250,12
+keldeo-resolute,10024,https://pokeapi.co/api/v2/pokemon/10024/,"water, fighting",14,485,15
+meowstic-female,10025,https://pokeapi.co/api/v2/pokemon/10025/,psychic,6,85,15
+aegislash-blade,10026,https://pokeapi.co/api/v2/pokemon/10026/,"steel, ghost",17,530,15
+pumpkaboo-small,10027,https://pokeapi.co/api/v2/pokemon/10027/,"ghost, grass",3,35,15
+pumpkaboo-large,10028,https://pokeapi.co/api/v2/pokemon/10028/,"ghost, grass",5,75,15
+pumpkaboo-super,10029,https://pokeapi.co/api/v2/pokemon/10029/,"ghost, grass",8,150,15
+gourgeist-small,10030,https://pokeapi.co/api/v2/pokemon/10030/,"ghost, grass",7,95,15
+gourgeist-large,10031,https://pokeapi.co/api/v2/pokemon/10031/,"ghost, grass",11,140,15
+gourgeist-super,10032,https://pokeapi.co/api/v2/pokemon/10032/,"ghost, grass",17,390,15
+venusaur-mega,10033,https://pokeapi.co/api/v2/pokemon/10033/,"grass, poison",24,1555,13
+charizard-mega-x,10034,https://pokeapi.co/api/v2/pokemon/10034/,"fire, dragon",17,1105,16
+charizard-mega-y,10035,https://pokeapi.co/api/v2/pokemon/10035/,"fire, flying",17,1005,16
+blastoise-mega,10036,https://pokeapi.co/api/v2/pokemon/10036/,water,16,1011,14
+alakazam-mega,10037,https://pokeapi.co/api/v2/pokemon/10037/,psychic,12,480,13
+gengar-mega,10038,https://pokeapi.co/api/v2/pokemon/10038/,"ghost, poison",14,405,11
+kangaskhan-mega,10039,https://pokeapi.co/api/v2/pokemon/10039/,normal,22,1000,15
+pinsir-mega,10040,https://pokeapi.co/api/v2/pokemon/10040/,"bug, flying",17,590,11
+gyarados-mega,10041,https://pokeapi.co/api/v2/pokemon/10041/,"water, dark",65,3050,13
+aerodactyl-mega,10042,https://pokeapi.co/api/v2/pokemon/10042/,"rock, flying",21,790,15
+mewtwo-mega-x,10043,https://pokeapi.co/api/v2/pokemon/10043/,"psychic, fighting",23,1270,13
+mewtwo-mega-y,10044,https://pokeapi.co/api/v2/pokemon/10044/,psychic,15,330,13
+ampharos-mega,10045,https://pokeapi.co/api/v2/pokemon/10045/,"electric, dragon",14,615,13
+scizor-mega,10046,https://pokeapi.co/api/v2/pokemon/10046/,"bug, steel",20,1250,11
+heracross-mega,10047,https://pokeapi.co/api/v2/pokemon/10047/,"bug, fighting",17,625,14
+houndoom-mega,10048,https://pokeapi.co/api/v2/pokemon/10048/,"dark, fire",19,495,13
+tyranitar-mega,10049,https://pokeapi.co/api/v2/pokemon/10049/,"rock, dark",25,2550,14
+blaziken-mega,10050,https://pokeapi.co/api/v2/pokemon/10050/,"fire, fighting",19,520,13
+gardevoir-mega,10051,https://pokeapi.co/api/v2/pokemon/10051/,"psychic, fairy",16,484,14
+mawile-mega,10052,https://pokeapi.co/api/v2/pokemon/10052/,"steel, fairy",10,235,11
+aggron-mega,10053,https://pokeapi.co/api/v2/pokemon/10053/,steel,22,3950,11
+medicham-mega,10054,https://pokeapi.co/api/v2/pokemon/10054/,"fighting, psychic",13,315,13
+manectric-mega,10055,https://pokeapi.co/api/v2/pokemon/10055/,electric,18,440,14
+banette-mega,10056,https://pokeapi.co/api/v2/pokemon/10056/,ghost,12,130,12
+absol-mega,10057,https://pokeapi.co/api/v2/pokemon/10057/,dark,12,490,10
+garchomp-mega,10058,https://pokeapi.co/api/v2/pokemon/10058/,"dragon, ground",19,950,13
+lucario-mega,10059,https://pokeapi.co/api/v2/pokemon/10059/,"fighting, steel",13,575,12
+abomasnow-mega,10060,https://pokeapi.co/api/v2/pokemon/10060/,"grass, ice",27,1850,14
+floette-eternal,10061,https://pokeapi.co/api/v2/pokemon/10061/,fairy,2,9,15
+latias-mega,10062,https://pokeapi.co/api/v2/pokemon/10062/,"dragon, psychic",18,520,11
+latios-mega,10063,https://pokeapi.co/api/v2/pokemon/10063/,"dragon, psychic",23,700,11
+swampert-mega,10064,https://pokeapi.co/api/v2/pokemon/10064/,"water, ground",19,1020,13
+sceptile-mega,10065,https://pokeapi.co/api/v2/pokemon/10065/,"grass, dragon",19,552,13
+sableye-mega,10066,https://pokeapi.co/api/v2/pokemon/10066/,"dark, ghost",5,1610,12
+altaria-mega,10067,https://pokeapi.co/api/v2/pokemon/10067/,"dragon, fairy",15,206,12
+gallade-mega,10068,https://pokeapi.co/api/v2/pokemon/10068/,"psychic, fighting",16,564,12
+audino-mega,10069,https://pokeapi.co/api/v2/pokemon/10069/,"normal, fairy",15,320,11
+sharpedo-mega,10070,https://pokeapi.co/api/v2/pokemon/10070/,"water, dark",25,1303,13
+slowbro-mega,10071,https://pokeapi.co/api/v2/pokemon/10071/,"water, psychic",20,1200,12
+steelix-mega,10072,https://pokeapi.co/api/v2/pokemon/10072/,"steel, ground",105,7400,12
+pidgeot-mega,10073,https://pokeapi.co/api/v2/pokemon/10073/,"normal, flying",22,505,12
+glalie-mega,10074,https://pokeapi.co/api/v2/pokemon/10074/,ice,21,3502,11
+diancie-mega,10075,https://pokeapi.co/api/v2/pokemon/10075/,"rock, fairy",11,278,12
+metagross-mega,10076,https://pokeapi.co/api/v2/pokemon/10076/,"steel, psychic",25,9429,14
+kyogre-primal,10077,https://pokeapi.co/api/v2/pokemon/10077/,water,98,4300,13
+groudon-primal,10078,https://pokeapi.co/api/v2/pokemon/10078/,"ground, fire",50,9997,14
+rayquaza-mega,10079,https://pokeapi.co/api/v2/pokemon/10079/,"dragon, flying",108,3920,13
+pikachu-rock-star,10080,https://pokeapi.co/api/v2/pokemon/10080/,electric,4,60,17
+pikachu-belle,10081,https://pokeapi.co/api/v2/pokemon/10081/,electric,4,60,13
+pikachu-pop-star,10082,https://pokeapi.co/api/v2/pokemon/10082/,electric,4,60,16
+pikachu-phd,10083,https://pokeapi.co/api/v2/pokemon/10083/,electric,4,60,11
+pikachu-libre,10084,https://pokeapi.co/api/v2/pokemon/10084/,electric,4,60,13
+pikachu-cosplay,10085,https://pokeapi.co/api/v2/pokemon/10085/,electric,4,60,15
+hoopa-unbound,10086,https://pokeapi.co/api/v2/pokemon/10086/,"psychic, dark",65,4900,13
+camerupt-mega,10087,https://pokeapi.co/api/v2/pokemon/10087/,"fire, ground",25,3205,13
+lopunny-mega,10088,https://pokeapi.co/api/v2/pokemon/10088/,"normal, fighting",13,283,12
+salamence-mega,10089,https://pokeapi.co/api/v2/pokemon/10089/,"dragon, flying",18,1126,14
+beedrill-mega,10090,https://pokeapi.co/api/v2/pokemon/10090/,"bug, poison",14,405,13
+rattata-alola,10091,https://pokeapi.co/api/v2/pokemon/10091/,"dark, normal",3,38,13
+raticate-alola,10092,https://pokeapi.co/api/v2/pokemon/10092/,"dark, normal",7,255,14
+raticate-totem-alola,10093,https://pokeapi.co/api/v2/pokemon/10093/,"dark, normal",14,1050,20
+pikachu-original-cap,10094,https://pokeapi.co/api/v2/pokemon/10094/,electric,4,60,20
+pikachu-hoenn-cap,10095,https://pokeapi.co/api/v2/pokemon/10095/,electric,4,60,17
+pikachu-sinnoh-cap,10096,https://pokeapi.co/api/v2/pokemon/10096/,electric,4,60,18
+pikachu-unova-cap,10097,https://pokeapi.co/api/v2/pokemon/10097/,electric,4,60,17
+pikachu-kalos-cap,10098,https://pokeapi.co/api/v2/pokemon/10098/,electric,4,60,17
+pikachu-alola-cap,10099,https://pokeapi.co/api/v2/pokemon/10099/,electric,4,60,17
+raichu-alola,10100,https://pokeapi.co/api/v2/pokemon/10100/,"electric, psychic",7,210,12
+sandshrew-alola,10101,https://pokeapi.co/api/v2/pokemon/10101/,"ice, steel",7,400,15
+sandslash-alola,10102,https://pokeapi.co/api/v2/pokemon/10102/,"ice, steel",12,550,15
+vulpix-alola,10103,https://pokeapi.co/api/v2/pokemon/10103/,ice,6,99,12
+ninetales-alola,10104,https://pokeapi.co/api/v2/pokemon/10104/,"ice, fairy",11,199,15
+diglett-alola,10105,https://pokeapi.co/api/v2/pokemon/10105/,"ground, steel",2,10,13
+dugtrio-alola,10106,https://pokeapi.co/api/v2/pokemon/10106/,"ground, steel",7,666,13
+meowth-alola,10107,https://pokeapi.co/api/v2/pokemon/10107/,dark,4,42,12
+persian-alola,10108,https://pokeapi.co/api/v2/pokemon/10108/,dark,11,330,13
+geodude-alola,10109,https://pokeapi.co/api/v2/pokemon/10109/,"rock, electric",4,203,13
+graveler-alola,10110,https://pokeapi.co/api/v2/pokemon/10110/,"rock, electric",10,1100,14
+golem-alola,10111,https://pokeapi.co/api/v2/pokemon/10111/,"rock, electric",17,3160,11
+grimer-alola,10112,https://pokeapi.co/api/v2/pokemon/10112/,"poison, dark",7,420,12
+muk-alola,10113,https://pokeapi.co/api/v2/pokemon/10113/,"poison, dark",10,520,9
+exeggutor-alola,10114,https://pokeapi.co/api/v2/pokemon/10114/,"grass, dragon",109,4156,15
+marowak-alola,10115,https://pokeapi.co/api/v2/pokemon/10115/,"fire, ghost",10,340,13
+greninja-battle-bond,10116,https://pokeapi.co/api/v2/pokemon/10116/,"water, dark",15,400,20
+greninja-ash,10117,https://pokeapi.co/api/v2/pokemon/10117/,"water, dark",15,400,12
+zygarde-10-power-construct,10118,https://pokeapi.co/api/v2/pokemon/10118/,"dragon, ground",12,335,26
+zygarde-50-power-construct,10119,https://pokeapi.co/api/v2/pokemon/10119/,"dragon, ground",50,3050,26
+zygarde-complete,10120,https://pokeapi.co/api/v2/pokemon/10120/,"dragon, ground",45,6100,16
+gumshoos-totem,10121,https://pokeapi.co/api/v2/pokemon/10121/,normal,14,600,14
+vikavolt-totem,10122,https://pokeapi.co/api/v2/pokemon/10122/,"bug, electric",26,1475,14
+oricorio-pom-pom,10123,https://pokeapi.co/api/v2/pokemon/10123/,"electric, flying",6,34,16
+oricorio-pau,10124,https://pokeapi.co/api/v2/pokemon/10124/,"psychic, flying",6,34,12
+oricorio-sensu,10125,https://pokeapi.co/api/v2/pokemon/10125/,"ghost, flying",6,34,14
+lycanroc-midnight,10126,https://pokeapi.co/api/v2/pokemon/10126/,rock,11,250,17
+wishiwashi-school,10127,https://pokeapi.co/api/v2/pokemon/10127/,water,82,786,17
+lurantis-totem,10128,https://pokeapi.co/api/v2/pokemon/10128/,grass,15,580,14
+salazzle-totem,10129,https://pokeapi.co/api/v2/pokemon/10129/,"poison, fire",21,810,14
+minior-orange-meteor,10130,https://pokeapi.co/api/v2/pokemon/10130/,"rock, flying",3,400,20
+minior-yellow-meteor,10131,https://pokeapi.co/api/v2/pokemon/10131/,"rock, flying",3,400,20
+minior-green-meteor,10132,https://pokeapi.co/api/v2/pokemon/10132/,"rock, flying",3,400,19
+minior-blue-meteor,10133,https://pokeapi.co/api/v2/pokemon/10133/,"rock, flying",3,400,18
+minior-indigo-meteor,10134,https://pokeapi.co/api/v2/pokemon/10134/,"rock, flying",3,400,20
+minior-violet-meteor,10135,https://pokeapi.co/api/v2/pokemon/10135/,"rock, flying",3,400,20
+minior-red,10136,https://pokeapi.co/api/v2/pokemon/10136/,"rock, flying",3,3,10
+minior-orange,10137,https://pokeapi.co/api/v2/pokemon/10137/,"rock, flying",3,3,13
+minior-yellow,10138,https://pokeapi.co/api/v2/pokemon/10138/,"rock, flying",3,3,13
+minior-green,10139,https://pokeapi.co/api/v2/pokemon/10139/,"rock, flying",3,3,12
+minior-blue,10140,https://pokeapi.co/api/v2/pokemon/10140/,"rock, flying",3,3,11
+minior-indigo,10141,https://pokeapi.co/api/v2/pokemon/10141/,"rock, flying",3,3,13
+minior-violet,10142,https://pokeapi.co/api/v2/pokemon/10142/,"rock, flying",3,3,13
+mimikyu-busted,10143,https://pokeapi.co/api/v2/pokemon/10143/,"ghost, fairy",2,7,14
+mimikyu-totem-disguised,10144,https://pokeapi.co/api/v2/pokemon/10144/,"ghost, fairy",4,28,23
+mimikyu-totem-busted,10145,https://pokeapi.co/api/v2/pokemon/10145/,"ghost, fairy",4,28,20
+kommo-o-totem,10146,https://pokeapi.co/api/v2/pokemon/10146/,"dragon, fighting",24,2075,13
+magearna-original,10147,https://pokeapi.co/api/v2/pokemon/10147/,"steel, fairy",10,805,17
+pikachu-partner-cap,10148,https://pokeapi.co/api/v2/pokemon/10148/,electric,4,60,19
+marowak-totem,10149,https://pokeapi.co/api/v2/pokemon/10149/,"fire, ghost",17,980,13
+ribombee-totem,10150,https://pokeapi.co/api/v2/pokemon/10150/,"bug, fairy",4,20,14
+rockruff-own-tempo,10151,https://pokeapi.co/api/v2/pokemon/10151/,rock,5,92,18
+lycanroc-dusk,10152,https://pokeapi.co/api/v2/pokemon/10152/,rock,8,250,13
+araquanid-totem,10153,https://pokeapi.co/api/v2/pokemon/10153/,"water, bug",31,2175,15
+togedemaru-totem,10154,https://pokeapi.co/api/v2/pokemon/10154/,"electric, steel",6,130,16
+necrozma-dusk,10155,https://pokeapi.co/api/v2/pokemon/10155/,"psychic, steel",38,4600,13
+necrozma-dawn,10156,https://pokeapi.co/api/v2/pokemon/10156/,"psychic, ghost",42,3500,13
+necrozma-ultra,10157,https://pokeapi.co/api/v2/pokemon/10157/,"psychic, dragon",75,2300,14
+pikachu-starter,10158,https://pokeapi.co/api/v2/pokemon/10158/,electric,4,60,15
+eevee-starter,10159,https://pokeapi.co/api/v2/pokemon/10159/,normal,3,65,13
+pikachu-world-cap,10160,https://pokeapi.co/api/v2/pokemon/10160/,electric,4,60,17
+meowth-galar,10161,https://pokeapi.co/api/v2/pokemon/10161/,steel,4,75,12
+ponyta-galar,10162,https://pokeapi.co/api/v2/pokemon/10162/,psychic,8,240,12
+rapidash-galar,10163,https://pokeapi.co/api/v2/pokemon/10163/,"psychic, fairy",17,800,14
+slowpoke-galar,10164,https://pokeapi.co/api/v2/pokemon/10164/,psychic,12,360,14
+slowbro-galar,10165,https://pokeapi.co/api/v2/pokemon/10165/,"poison, psychic",16,705,13
+farfetchd-galar,10166,https://pokeapi.co/api/v2/pokemon/10166/,fighting,8,420,15
+weezing-galar,10167,https://pokeapi.co/api/v2/pokemon/10167/,"poison, fairy",30,160,13
+mr-mime-galar,10168,https://pokeapi.co/api/v2/pokemon/10168/,"ice, psychic",14,568,13
+articuno-galar,10169,https://pokeapi.co/api/v2/pokemon/10169/,"psychic, flying",17,509,14
+zapdos-galar,10170,https://pokeapi.co/api/v2/pokemon/10170/,"fighting, flying",16,582,12
+moltres-galar,10171,https://pokeapi.co/api/v2/pokemon/10171/,"dark, flying",20,660,13
+slowking-galar,10172,https://pokeapi.co/api/v2/pokemon/10172/,"poison, psychic",18,795,14
+corsola-galar,10173,https://pokeapi.co/api/v2/pokemon/10173/,ghost,6,5,13
+zigzagoon-galar,10174,https://pokeapi.co/api/v2/pokemon/10174/,"dark, normal",4,175,15
+linoone-galar,10175,https://pokeapi.co/api/v2/pokemon/10175/,"dark, normal",5,325,13
+darumaka-galar,10176,https://pokeapi.co/api/v2/pokemon/10176/,ice,7,400,14
+darmanitan-galar-standard,10177,https://pokeapi.co/api/v2/pokemon/10177/,ice,17,1200,25
+darmanitan-galar-zen,10178,https://pokeapi.co/api/v2/pokemon/10178/,"ice, fire",17,1200,20
+yamask-galar,10179,https://pokeapi.co/api/v2/pokemon/10179/,"ground, ghost",5,15,12
+stunfisk-galar,10180,https://pokeapi.co/api/v2/pokemon/10180/,"ground, steel",7,205,14
+zygarde-10,10181,https://pokeapi.co/api/v2/pokemon/10181/,"dragon, ground",12,335,10
+cramorant-gulping,10182,https://pokeapi.co/api/v2/pokemon/10182/,"flying, water",8,180,17
+cramorant-gorging,10183,https://pokeapi.co/api/v2/pokemon/10183/,"flying, water",8,180,17
+toxtricity-low-key,10184,https://pokeapi.co/api/v2/pokemon/10184/,"electric, poison",16,400,18
+eiscue-noice,10185,https://pokeapi.co/api/v2/pokemon/10185/,ice,14,890,12
+indeedee-female,10186,https://pokeapi.co/api/v2/pokemon/10186/,"psychic, normal",9,280,15
+morpeko-hangry,10187,https://pokeapi.co/api/v2/pokemon/10187/,"electric, dark",3,30,14
+zacian-crowned,10188,https://pokeapi.co/api/v2/pokemon/10188/,"fairy, steel",28,3550,14
+zamazenta-crowned,10189,https://pokeapi.co/api/v2/pokemon/10189/,"fighting, steel",29,7850,17
+eternatus-eternamax,10190,https://pokeapi.co/api/v2/pokemon/10190/,"poison, dragon",1000,0,19
+urshifu-rapid-strike,10191,https://pokeapi.co/api/v2/pokemon/10191/,"fighting, water",19,1050,20
+zarude-dada,10192,https://pokeapi.co/api/v2/pokemon/10192/,"dark, grass",18,700,11
+calyrex-ice,10193,https://pokeapi.co/api/v2/pokemon/10193/,"psychic, ice",24,8091,11
+calyrex-shadow,10194,https://pokeapi.co/api/v2/pokemon/10194/,"psychic, ghost",24,536,14
+venusaur-gmax,10195,https://pokeapi.co/api/v2/pokemon/10195/,"grass, poison",240,10000,13
+charizard-gmax,10196,https://pokeapi.co/api/v2/pokemon/10196/,"fire, flying",280,10000,14
+blastoise-gmax,10197,https://pokeapi.co/api/v2/pokemon/10197/,water,250,10000,14
+butterfree-gmax,10198,https://pokeapi.co/api/v2/pokemon/10198/,"bug, flying",170,10000,15
+pikachu-gmax,10199,https://pokeapi.co/api/v2/pokemon/10199/,electric,210,10000,12
+meowth-gmax,10200,https://pokeapi.co/api/v2/pokemon/10200/,normal,330,10000,11
+machamp-gmax,10201,https://pokeapi.co/api/v2/pokemon/10201/,fighting,250,10000,12
+gengar-gmax,10202,https://pokeapi.co/api/v2/pokemon/10202/,"ghost, poison",200,10000,11
+kingler-gmax,10203,https://pokeapi.co/api/v2/pokemon/10203/,water,190,10000,12
+lapras-gmax,10204,https://pokeapi.co/api/v2/pokemon/10204/,"water, ice",240,10000,11
+eevee-gmax,10205,https://pokeapi.co/api/v2/pokemon/10205/,normal,180,10000,10
+snorlax-gmax,10206,https://pokeapi.co/api/v2/pokemon/10206/,normal,350,10000,12
+garbodor-gmax,10207,https://pokeapi.co/api/v2/pokemon/10207/,poison,210,10000,13
+melmetal-gmax,10208,https://pokeapi.co/api/v2/pokemon/10208/,steel,250,10000,13
+rillaboom-gmax,10209,https://pokeapi.co/api/v2/pokemon/10209/,grass,280,10000,14
+cinderace-gmax,10210,https://pokeapi.co/api/v2/pokemon/10210/,fire,270,10000,14
+inteleon-gmax,10211,https://pokeapi.co/api/v2/pokemon/10211/,water,400,10000,13
+corviknight-gmax,10212,https://pokeapi.co/api/v2/pokemon/10212/,"flying, steel",140,10000,16
+orbeetle-gmax,10213,https://pokeapi.co/api/v2/pokemon/10213/,"bug, psychic",140,10000,13
+drednaw-gmax,10214,https://pokeapi.co/api/v2/pokemon/10214/,"water, rock",240,10000,12
+coalossal-gmax,10215,https://pokeapi.co/api/v2/pokemon/10215/,"rock, fire",420,10000,14
+flapple-gmax,10216,https://pokeapi.co/api/v2/pokemon/10216/,"grass, dragon",240,10000,12
+appletun-gmax,10217,https://pokeapi.co/api/v2/pokemon/10217/,"grass, dragon",240,10000,13
+sandaconda-gmax,10218,https://pokeapi.co/api/v2/pokemon/10218/,ground,220,10000,15
+toxtricity-amped-gmax,10219,https://pokeapi.co/api/v2/pokemon/10219/,"electric, poison",240,10000,21
+centiskorch-gmax,10220,https://pokeapi.co/api/v2/pokemon/10220/,"fire, bug",750,10000,16
+hatterene-gmax,10221,https://pokeapi.co/api/v2/pokemon/10221/,"psychic, fairy",260,10000,14
+grimmsnarl-gmax,10222,https://pokeapi.co/api/v2/pokemon/10222/,"dark, fairy",320,10000,15
+alcremie-gmax,10223,https://pokeapi.co/api/v2/pokemon/10223/,fairy,300,10000,13
+copperajah-gmax,10224,https://pokeapi.co/api/v2/pokemon/10224/,steel,230,10000,15
+duraludon-gmax,10225,https://pokeapi.co/api/v2/pokemon/10225/,"steel, dragon",430,10000,14
+urshifu-single-strike-gmax,10226,https://pokeapi.co/api/v2/pokemon/10226/,"fighting, dark",290,10000,26
+urshifu-rapid-strike-gmax,10227,https://pokeapi.co/api/v2/pokemon/10227/,"fighting, water",260,10000,25
+toxtricity-low-key-gmax,10228,https://pokeapi.co/api/v2/pokemon/10228/,"electric, poison",240,10000,23
+growlithe-hisui,10229,https://pokeapi.co/api/v2/pokemon/10229/,"fire, rock",8,227,15
+arcanine-hisui,10230,https://pokeapi.co/api/v2/pokemon/10230/,"fire, rock",20,1680,14
+voltorb-hisui,10231,https://pokeapi.co/api/v2/pokemon/10231/,"electric, grass",5,130,13
+electrode-hisui,10232,https://pokeapi.co/api/v2/pokemon/10232/,"electric, grass",12,710,15
+typhlosion-hisui,10233,https://pokeapi.co/api/v2/pokemon/10233/,"fire, ghost",16,698,16
+qwilfish-hisui,10234,https://pokeapi.co/api/v2/pokemon/10234/,"dark, poison",5,39,14
+sneasel-hisui,10235,https://pokeapi.co/api/v2/pokemon/10235/,"fighting, poison",9,270,13
+samurott-hisui,10236,https://pokeapi.co/api/v2/pokemon/10236/,"water, dark",15,582,14
+lilligant-hisui,10237,https://pokeapi.co/api/v2/pokemon/10237/,"grass, fighting",12,192,15
+zorua-hisui,10238,https://pokeapi.co/api/v2/pokemon/10238/,"normal, ghost",7,125,11
+zoroark-hisui,10239,https://pokeapi.co/api/v2/pokemon/10239/,"normal, ghost",16,730,13
+braviary-hisui,10240,https://pokeapi.co/api/v2/pokemon/10240/,"psychic, flying",17,434,14
+sliggoo-hisui,10241,https://pokeapi.co/api/v2/pokemon/10241/,"steel, dragon",7,685,13
+goodra-hisui,10242,https://pokeapi.co/api/v2/pokemon/10242/,"steel, dragon",17,3341,12
+avalugg-hisui,10243,https://pokeapi.co/api/v2/pokemon/10243/,"ice, rock",14,2624,13
+decidueye-hisui,10244,https://pokeapi.co/api/v2/pokemon/10244/,"grass, fighting",16,370,15
+dialga-origin,10245,https://pokeapi.co/api/v2/pokemon/10245/,"steel, dragon",70,8487,13
+palkia-origin,10246,https://pokeapi.co/api/v2/pokemon/10246/,"water, dragon",63,6590,13
+basculin-white-striped,10247,https://pokeapi.co/api/v2/pokemon/10247/,water,10,180,22
+basculegion-female,10248,https://pokeapi.co/api/v2/pokemon/10248/,"water, ghost",30,1100,18
+enamorus-therian,10249,https://pokeapi.co/api/v2/pokemon/10249/,"fairy, flying",16,480,16
+tauros-paldea-combat-breed,10250,https://pokeapi.co/api/v2/pokemon/10250/,fighting,14,1150,26
+tauros-paldea-blaze-breed,10251,https://pokeapi.co/api/v2/pokemon/10251/,"fighting, fire",14,850,25
+tauros-paldea-aqua-breed,10252,https://pokeapi.co/api/v2/pokemon/10252/,"fighting, water",14,1100,24
+wooper-paldea,10253,https://pokeapi.co/api/v2/pokemon/10253/,"poison, ground",4,110,13
+oinkologne-female,10254,https://pokeapi.co/api/v2/pokemon/10254/,normal,10,1200,17
+dudunsparce-three-segment,10255,https://pokeapi.co/api/v2/pokemon/10255/,normal,45,474,25
+palafin-hero,10256,https://pokeapi.co/api/v2/pokemon/10256/,water,18,974,12
+maushold-family-of-three,10257,https://pokeapi.co/api/v2/pokemon/10257/,normal,3,28,24
+tatsugiri-droopy,10258,https://pokeapi.co/api/v2/pokemon/10258/,"dragon, water",3,80,16
+tatsugiri-stretchy,10259,https://pokeapi.co/api/v2/pokemon/10259/,"dragon, water",3,80,18
+squawkabilly-blue-plumage,10260,https://pokeapi.co/api/v2/pokemon/10260/,"normal, flying",6,24,25
+squawkabilly-yellow-plumage,10261,https://pokeapi.co/api/v2/pokemon/10261/,"normal, flying",6,24,27
+squawkabilly-white-plumage,10262,https://pokeapi.co/api/v2/pokemon/10262/,"normal, flying",6,24,26
+gimmighoul-roaming,10263,https://pokeapi.co/api/v2/pokemon/10263/,ghost,1,10,18
+koraidon-limited-build,10264,https://pokeapi.co/api/v2/pokemon/10264/,"fighting, dragon",35,3030,22
+koraidon-sprinting-build,10265,https://pokeapi.co/api/v2/pokemon/10265/,"fighting, dragon",35,3030,24
+koraidon-swimming-build,10266,https://pokeapi.co/api/v2/pokemon/10266/,"fighting, dragon",35,3030,23
+koraidon-gliding-build,10267,https://pokeapi.co/api/v2/pokemon/10267/,"fighting, dragon",35,3030,22
+miraidon-low-power-mode,10268,https://pokeapi.co/api/v2/pokemon/10268/,"electric, dragon",28,2400,23
+miraidon-drive-mode,10269,https://pokeapi.co/api/v2/pokemon/10269/,"electric, dragon",28,2400,19
+miraidon-aquatic-mode,10270,https://pokeapi.co/api/v2/pokemon/10270/,"electric, dragon",28,2400,21
+miraidon-glide-mode,10271,https://pokeapi.co/api/v2/pokemon/10271/,"electric, dragon",28,2400,19
+ursaluna-bloodmoon,10272,https://pokeapi.co/api/v2/pokemon/10272/,"ground, normal",24,2900,18
+ogerpon-wellspring-mask,10273,https://pokeapi.co/api/v2/pokemon/10273/,"grass, water",12,398,23
+ogerpon-hearthflame-mask,10274,https://pokeapi.co/api/v2/pokemon/10274/,"grass, fire",12,398,24
+ogerpon-cornerstone-mask,10275,https://pokeapi.co/api/v2/pokemon/10275/,"grass, rock",12,398,24
+terapagos-terastal,10276,https://pokeapi.co/api/v2/pokemon/10276/,normal,3,160,18
+terapagos-stellar,10277,https://pokeapi.co/api/v2/pokemon/10277/,normal,17,770,17
+clefable-mega,10278,https://pokeapi.co/api/v2/pokemon/10278/,"fairy, flying",17,423,13
+victreebel-mega,10279,https://pokeapi.co/api/v2/pokemon/10279/,"grass, poison",45,1255,15
+starmie-mega,10280,https://pokeapi.co/api/v2/pokemon/10280/,"water, psychic",23,800,12
+dragonite-mega,10281,https://pokeapi.co/api/v2/pokemon/10281/,"dragon, flying",22,2900,14
+meganium-mega,10282,https://pokeapi.co/api/v2/pokemon/10282/,"grass, fairy",24,2010,13
+feraligatr-mega,10283,https://pokeapi.co/api/v2/pokemon/10283/,"water, dragon",23,1088,15
+skarmory-mega,10284,https://pokeapi.co/api/v2/pokemon/10284/,"steel, flying",17,404,13
+froslass-mega,10285,https://pokeapi.co/api/v2/pokemon/10285/,"ice, ghost",26,296,13
+emboar-mega,10286,https://pokeapi.co/api/v2/pokemon/10286/,"fire, fighting",18,1803,11
+excadrill-mega,10287,https://pokeapi.co/api/v2/pokemon/10287/,"ground, steel",9,600,14
+scolipede-mega,10288,https://pokeapi.co/api/v2/pokemon/10288/,"bug, poison",32,2305,14
+scrafty-mega,10289,https://pokeapi.co/api/v2/pokemon/10289/,"dark, fighting",11,310,12
+eelektross-mega,10290,https://pokeapi.co/api/v2/pokemon/10290/,electric,30,1800,15
+chandelure-mega,10291,https://pokeapi.co/api/v2/pokemon/10291/,"ghost, fire",25,696,15
+chesnaught-mega,10292,https://pokeapi.co/api/v2/pokemon/10292/,"grass, fighting",16,900,15
+delphox-mega,10293,https://pokeapi.co/api/v2/pokemon/10293/,"fire, psychic",15,390,12
+greninja-mega,10294,https://pokeapi.co/api/v2/pokemon/10294/,"water, dark",15,400,13
+pyroar-mega,10295,https://pokeapi.co/api/v2/pokemon/10295/,"fire, normal",15,933,11
+floette-mega,10296,https://pokeapi.co/api/v2/pokemon/10296/,fairy,2,1008,12
+malamar-mega,10297,https://pokeapi.co/api/v2/pokemon/10297/,"dark, psychic",29,698,12
+barbaracle-mega,10298,https://pokeapi.co/api/v2/pokemon/10298/,"rock, fighting",22,1000,15
+dragalge-mega,10299,https://pokeapi.co/api/v2/pokemon/10299/,"poison, dragon",21,1003,13
+hawlucha-mega,10300,https://pokeapi.co/api/v2/pokemon/10300/,"fighting, flying",10,250,13
+zygarde-mega,10301,https://pokeapi.co/api/v2/pokemon/10301/,"dragon, ground",77,6100,12
+drampa-mega,10302,https://pokeapi.co/api/v2/pokemon/10302/,"normal, dragon",30,2405,11
+falinks-mega,10303,https://pokeapi.co/api/v2/pokemon/10303/,fighting,16,990,12
+raichu-mega-x,10304,https://pokeapi.co/api/v2/pokemon/10304/,electric,12,380,13
+raichu-mega-y,10305,https://pokeapi.co/api/v2/pokemon/10305/,electric,10,260,13
+chimecho-mega,10306,https://pokeapi.co/api/v2/pokemon/10306/,"psychic, steel",12,80,13
+absol-mega-z,10307,https://pokeapi.co/api/v2/pokemon/10307/,"dark, ghost",12,490,12
+staraptor-mega,10308,https://pokeapi.co/api/v2/pokemon/10308/,"fighting, flying",19,500,14
+garchomp-mega-z,10309,https://pokeapi.co/api/v2/pokemon/10309/,dragon,19,990,15
+lucario-mega-z,10310,https://pokeapi.co/api/v2/pokemon/10310/,"fighting, steel",13,494,14
+heatran-mega,10311,https://pokeapi.co/api/v2/pokemon/10311/,"fire, steel",28,5700,12
+darkrai-mega,10312,https://pokeapi.co/api/v2/pokemon/10312/,dark,30,2400,12
+golurk-mega,10313,https://pokeapi.co/api/v2/pokemon/10313/,"ground, ghost",40,3300,11
+meowstic-mega,10314,https://pokeapi.co/api/v2/pokemon/10314/,psychic,8,101,13
+crabominable-mega,10315,https://pokeapi.co/api/v2/pokemon/10315/,"fighting, ice",26,2528,17
+golisopod-mega,10316,https://pokeapi.co/api/v2/pokemon/10316/,"bug, steel",23,1480,14
+magearna-mega,10317,https://pokeapi.co/api/v2/pokemon/10317/,"steel, fairy",13,2481,13
+magearna-original-mega,10318,https://pokeapi.co/api/v2/pokemon/10318/,"steel, fairy",13,2481,22
+zeraora-mega,10319,https://pokeapi.co/api/v2/pokemon/10319/,electric,15,445,12
+scovillain-mega,10320,https://pokeapi.co/api/v2/pokemon/10320/,"grass, fire",12,220,15
+glimmora-mega,10321,https://pokeapi.co/api/v2/pokemon/10321/,"rock, poison",28,770,13
+tatsugiri-curly-mega,10322,https://pokeapi.co/api/v2/pokemon/10322/,"dragon, water",6,240,20
+tatsugiri-droopy-mega,10323,https://pokeapi.co/api/v2/pokemon/10323/,"dragon, water",6,240,21
+tatsugiri-stretchy-mega,10324,https://pokeapi.co/api/v2/pokemon/10324/,"dragon, water",6,240,23
+baxcalibur-mega,10325,https://pokeapi.co/api/v2/pokemon/10325/,"dragon, ice",21,3150,15

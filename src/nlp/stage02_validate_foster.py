@@ -21,40 +21,51 @@ import logging
 from typing import Any
 
 
-def run_validate(json_data: Any, LOG: logging.Logger) -> list[dict]:
-    """Validate Pokémon JSON structure.
+def run_validate(
+    json_data: Any,
+    LOG: logging.Logger | None = None,
+) -> dict[str, list[dict[str, Any]]]:
+    """
+    Validate JSON data structure for the Pokémon pipeline.
 
     Args:
-        json_data (Any): Raw JSON from the Extract stage.
-        LOG (logging.Logger): Logger instance.
+        json_data: The raw JSON object from the extract stage.
+        LOG: Optional logger instance.
 
     Returns:
-        list[dict]: Validated Pokémon records (from 'results').
+        Validated JSON dictionary.
+
+    Raises:
+        ValueError: If the JSON structure is invalid.
     """
-    LOG.info("========================")
-    LOG.info("STAGE 02: VALIDATE starting...")
-    LOG.info("========================")
 
-    LOG.info(f"Top-level type: {type(json_data).__name__}")
+    if LOG:
+        LOG.info("========================")
+        LOG.info("STAGE 02: VALIDATE starting...")
+        LOG.info("========================")
 
+    # Ensure top-level is a dictionary
     if not isinstance(json_data, dict):
         raise ValueError("Expected top-level JSON to be a dictionary.")
 
-    if "results" not in json_data:
-        raise ValueError("Missing 'results' key in JSON data.")
+    # Ensure "results" key exists and is a list
+    if "results" not in json_data or not isinstance(json_data["results"], list):
+        raise ValueError(
+            'Expected JSON dictionary to contain a "results" key with a list.'
+        )
 
-    results = json_data["results"]
+    if LOG:
+        LOG.info(f'Top-level keys: {list(json_data.keys())}')
+        LOG.info(f'Number of Pokémon records: {len(json_data["results"])}')
 
-    if not isinstance(results, list):
-        raise ValueError("Expected 'results' to be a list.")
+    # Optional: validate that each Pokémon has required fields
+    required_fields = {"name", "id", "types", "url", "height", "weight"}
+    for i, record in enumerate(json_data["results"]):
+        missing = required_fields - record.keys()
+        if missing:
+            raise ValueError(f"Record {i} is missing fields: {missing}")
 
-    if len(results) == 0:
-        raise ValueError("Expected at least one Pokémon record.")
+    if LOG:
+        LOG.info("Validation complete. All records contain required fields.")
 
-    if not all(isinstance(record, dict) for record in results):
-        raise ValueError("All Pokémon records must be dictionaries.")
-
-    LOG.info("Validation passed. Number of Pokémon records: %d", len(results))
-    LOG.info("Sink: validated JSON object (results list)")
-
-    return results
+    return json_data

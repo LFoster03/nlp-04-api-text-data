@@ -16,72 +16,62 @@ Notes
 - This file should not require modification.
 """
 
-# ============================================================
-# Section 1. Setup and Imports
-# ============================================================
-
+import json
 import logging
 from pathlib import Path
 from typing import Any
 
-from datafun_toolkit.logger import log_path
 import requests
 
-# ============================================================
-# Section 2. Define Run Extract Function
-# ============================================================
+from nlp.config_foster import API_URL, HTTP_REQUEST_HEADERS, RAW_JSON_PATH
 
 
 def run_extract(
-    source_api_url: str,
-    http_request_headers: dict[str, str],
-    raw_json_path: Path,
-    LOG: logging.Logger,
-) -> Any:
-    """Extract JSON data from the API and save it to a file.
+    source_api_url: str = API_URL,
+    http_request_headers: dict[str, str] = HTTP_REQUEST_HEADERS,
+    raw_json_path: Path = RAW_JSON_PATH,
+    LOG: logging.Logger | None = None,
+) -> dict[str, list[dict[str, Any]]]:
+    """Extract all Pokémon from API, including details, and wrap in a dictionary for validation."""
 
-    Args:
-        source_api_url (str): The URL of the API endpoint.
-        http_request_headers (dict[str, str]): The HTTP request headers.
-        raw_json_path (Path): The path to save the raw JSON file.
-        LOG (logging.Logger): The logger instance.
+    if LOG:
+        LOG.info("========================")
+        LOG.info("STAGE 01: EXTRACT starting...")
+        LOG.info("========================")
 
-    Returns:
-        Any: The extracted JSON data as a Python object (e.g., a list or dictionary).
+    all_pokemon = []
+    url = source_api_url
 
-    Raises:
-        requests.HTTPError: If the HTTP request to the API fails.
-        requests.RequestException: For other types of request exceptions.
-        ValueError: If the response content cannot be parsed as JSON.
-    """
-    LOG.info("========================")
-    LOG.info("STAGE 01: EXTRACT starting... ")
-    LOG.info("========================")
+    while url:
+        response = requests.get(url, headers=http_request_headers)
+        data = response.json()
 
-    # Use the requests.get() function to make an HTTP GET request
-    # to the source_api_url with the provided headers.
-    response = requests.get(source_api_url, headers=http_request_headers, timeout=30)
+        for p in data["results"]:
+            details = requests.get(p["url"], headers=http_request_headers).json()
+            pokemon_record = {
+                "name": details["name"],
+                "id": details["id"],
+                "types": [t["type"]["name"] for t in details["types"]],
+                "url": p["url"],
+                "height": details["height"],
+                "weight": details["weight"],
+            }
+            all_pokemon.append(pokemon_record)
 
-    # Use the raise_for_status() method to check for HTTP errors
-    # and raise an exception if the request was unsuccessful.
-    response.raise_for_status()
+        url = data["next"]
 
-    # Use the .json() method of the response object to parse the JSON content
-    # and store it in a variable called json_data.
-    json_data: Any = response.json()
+    # Wrap list in dictionary for validator
+    payload = {"results": all_pokemon}
 
-    # Use the write_text() method of the raw_json_path to
-    # save the raw JSON data to a file.
-    # Specify the encoding as "utf-8" to ensure proper handling of special characters.
-    raw_json_path.write_text(response.text, encoding="utf-8")
+    # Ensure directory exists
+    raw_json_path.parent.mkdir(parents=True, exist_ok=True)
 
-    # Use log.info() to log the source API URL (a string).
-    # Use a formatted string (f-string) to include the variable in the log message.
-    LOG.info(f"SOURCE PATH = {source_api_url}")
+    # Save raw JSON
+    with raw_json_path.open("w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2)
 
-    # Use the privacy-conscious
-    # log_path function to log the sink path.
-    log_path(LOG, "SINK PATH", raw_json_path)
+    if LOG:
+        LOG.info(f"Extracted {len(all_pokemon)} Pokémon")
+        LOG.info(f"Raw JSON saved to {raw_json_path}")
 
-    # Return the extracted JSON data as a Python object (e.g., a list or dictionary).
-    return json_data
+    return payload

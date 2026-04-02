@@ -224,3 +224,106 @@ shape: (5, 3)
 2026-04-01 12:17:52 | INFO | CI | ========================
 2026-04-01 12:17:52 | INFO | CI | Pipeline executed successfully!
 2026-04-01 12:17:52 | INFO | CI | ========================
+2026-04-01 13:51:48 | INFO | CI | === RUN START ===
+2026-04-01 13:51:48 | INFO | CI | project=MODULE 4: EVTL PIPELINE
+2026-04-01 13:51:48 | INFO | CI | repo_dir=nlp-04-api-text-data
+2026-04-01 13:51:48 | INFO | CI | python=3.14.3
+2026-04-01 13:51:48 | INFO | CI | os=Windows 11
+2026-04-01 13:51:48 | INFO | CI | shell=powershell
+2026-04-01 13:51:48 | INFO | CI | cwd=.
+2026-04-01 13:51:48 | INFO | CI | github_actions=False
+2026-04-01 13:51:48 | INFO | CI | START PIPELINE
+2026-04-01 13:51:48 | INFO | CI | ROOT_PATH = .
+2026-04-01 13:51:48 | INFO | CI | DATA_PATH = data
+2026-04-01 13:51:48 | INFO | CI | RAW_PATH = data\raw
+2026-04-01 13:51:48 | INFO | CI | PROCESSED_PATH = data\processed
+2026-04-01 13:51:48 | INFO | CI | ========================
+2026-04-01 13:51:48 | INFO | CI | STAGE 01: EXTRACT starting...
+2026-04-01 13:51:48 | INFO | CI | ========================
+2026-04-01 13:52:29 | INFO | CI | === RUN START ===
+2026-04-01 13:52:29 | INFO | CI | project=MODULE 4: EVTL PIPELINE
+2026-04-01 13:52:29 | INFO | CI | repo_dir=nlp-04-api-text-data
+2026-04-01 13:52:29 | INFO | CI | python=3.14.3
+2026-04-01 13:52:29 | INFO | CI | os=Windows 11
+2026-04-01 13:52:29 | INFO | CI | shell=powershell
+2026-04-01 13:52:29 | INFO | CI | cwd=.
+2026-04-01 13:52:29 | INFO | CI | github_actions=False
+2026-04-01 13:52:29 | INFO | CI | START PIPELINE
+2026-04-01 13:52:29 | INFO | CI | ROOT_PATH = .
+2026-04-01 13:52:29 | INFO | CI | DATA_PATH = data
+2026-04-01 13:52:29 | INFO | CI | RAW_PATH = data\raw
+2026-04-01 13:52:29 | INFO | CI | PROCESSED_PATH = data\processed
+2026-04-01 13:52:29 | INFO | CI | ========================
+2026-04-01 13:52:29 | INFO | CI | STAGE 01: EXTRACT starting...
+2026-04-01 13:52:29 | INFO | CI | ========================
+2026-04-01 13:55:04 | INFO | CI | === RUN START ===
+2026-04-01 13:55:04 | INFO | CI | project=MODULE 4: EVTL PIPELINE
+2026-04-01 13:55:04 | INFO | CI | repo_dir=nlp-04-api-text-data
+2026-04-01 13:55:04 | INFO | CI | python=3.14.3
+2026-04-01 13:55:04 | INFO | CI | os=Windows 11
+2026-04-01 13:55:04 | INFO | CI | shell=powershell
+2026-04-01 13:55:04 | INFO | CI | cwd=.
+2026-04-01 13:55:04 | INFO | CI | github_actions=False
+2026-04-01 13:55:04 | INFO | CI | START PIPELINE
+2026-04-01 13:55:04 | INFO | CI | ROOT_PATH = .
+2026-04-01 13:55:04 | INFO | CI | DATA_PATH = data
+2026-04-01 13:55:04 | INFO | CI | RAW_PATH = data\raw
+2026-04-01 13:55:04 | INFO | CI | PROCESSED_PATH = data\processed
+2026-04-01 13:55:04 | INFO | CI | ========================
+2026-04-01 13:55:04 | INFO | CI | STAGE 01: EXTRACT starting...
+2026-04-01 13:55:04 | INFO | CI | ========================
+2026-04-01 13:55:11 | INFO | CI | Extracted 50 Pokémon
+2026-04-01 13:55:11 | INFO | CI | Raw JSON saved to C:\Repos\nlp-04-api-text-data\data\raw\pokemon_raw.json
+2026-04-01 13:55:11 | INFO | CI | ========================
+2026-04-01 13:55:11 | INFO | CI | STAGE 02: VALIDATE starting...
+2026-04-01 13:55:11 | INFO | CI | ========================
+2026-04-01 13:55:11 | INFO | CI | Top-level type: list
+2026-04-01 13:58:40 | INFO | CI | === RUN START ===
+2026-04-01 13:58:40 | INFO | CI | project=MODULE 4: EVTL PIPELINE
+2026-04-01 13:58:40 | INFO | CI | repo_dir=nlp-04-api-text-data
+2026-04-01 13:58:40 | INFO | CI | python=3.14.3
+2026-04-01 13:58:40 | INFO | CI | os=Windows 11
+2026-04-01 13:58:40 | INFO | CI | shell=powershell
+2026-04-01 13:58:40 | INFO | CI | cwd=.
+2026-04-01 13:58:40 | INFO | CI | github_actions=False
+2026-04-01 13:58:40 | INFO | CI | START PIPELINE
+2026-04-01 13:58:40 | INFO | CI | ROOT_PATH = .
+2026-04-01 13:58:40 | INFO | CI | DATA_PATH = data
+2026-04-01 13:58:40 | INFO | CI | RAW_PATH = data\raw
+2026-04-01 13:58:40 | INFO | CI | PROCESSED_PATH = data\processed
+2026-04-01 13:58:40 | INFO | CI | ========================
+2026-04-01 13:58:40 | INFO | CI | STAGE 01: EXTRACT starting...
+2026-04-01 13:58:40 | INFO | CI | ========================
+2026-04-01 14:01:33 | INFO | CI | Extracted 1350 Pokémon
+2026-04-01 14:01:33 | INFO | CI | Raw JSON saved to C:\Repos\nlp-04-api-text-data\data\raw\pokemon_raw.json
+2026-04-01 14:01:33 | INFO | CI | ========================
+2026-04-01 14:01:33 | INFO | CI | STAGE 02: VALIDATE starting...
+2026-04-01 14:01:33 | INFO | CI | ========================
+2026-04-01 14:01:33 | INFO | CI | Top-level keys: ['results']
+2026-04-01 14:01:33 | INFO | CI | Number of Pokémon records: 1350
+2026-04-01 14:01:33 | INFO | CI | Validation complete. All records contain required fields.
+2026-04-01 14:01:33 | INFO | CI | ========================
+2026-04-01 14:01:33 | INFO | CI | STAGE 03: TRANSFORM starting...
+2026-04-01 14:01:33 | INFO | CI | ========================
+2026-04-01 14:01:33 | INFO | CI | Transformation complete.
+2026-04-01 14:01:33 | INFO | CI | DataFrame preview:
+shape: (5, 7)
+┌────────────┬─────┬─────────────────────────────────┬───────────────┬────────┬────────┬─────────────┐
+│ name       ┆ id  ┆ url                             ┆ types         ┆ height ┆ weight ┆ name_length │
+│ ---        ┆ --- ┆ ---                             ┆ ---           ┆ ---    ┆ ---    ┆ ---         │
+│ str        ┆ i64 ┆ str                             ┆ str           ┆ i64    ┆ i64    ┆ u32         │
+╞════════════╪═════╪═════════════════════════════════╪═══════════════╪════════╪════════╪═════════════╡
+│ bulbasaur  ┆ 1   ┆ https://pokeapi.co/api/v2/poke… ┆ grass, poison ┆ 7      ┆ 69     ┆ 9           │
+│ ivysaur    ┆ 2   ┆ https://pokeapi.co/api/v2/poke… ┆ grass, poison ┆ 10     ┆ 130    ┆ 7           │
+│ venusaur   ┆ 3   ┆ https://pokeapi.co/api/v2/poke… ┆ grass, poison ┆ 20     ┆ 1000   ┆ 8           │
+│ charmander ┆ 4   ┆ https://pokeapi.co/api/v2/poke… ┆ fire          ┆ 6      ┆ 85     ┆ 10          │
+│ charmeleon ┆ 5   ┆ https://pokeapi.co/api/v2/poke… ┆ fire          ┆ 11     ┆ 190    ┆ 10          │
+└────────────┴─────┴─────────────────────────────────┴───────────────┴────────┴────────┴─────────────┘
+2026-04-01 14:01:33 | INFO | CI | Sink: Polars DataFrame created
+2026-04-01 14:01:33 | INFO | CI | ========================
+2026-04-01 14:01:33 | INFO | CI | STAGE 04: LOAD starting...
+2026-04-01 14:01:33 | INFO | CI | ========================
+2026-04-01 14:01:33 | INFO | CI | SINK PATH = data\processed\pokemon_processed.csv
+2026-04-01 14:01:33 | INFO | CI | ========================
+2026-04-01 14:01:33 | INFO | CI | Pipeline executed successfully!
+2026-04-01 14:01:33 | INFO | CI | ========================

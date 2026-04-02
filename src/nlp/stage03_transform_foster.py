@@ -22,36 +22,39 @@ from typing import Any
 import polars as pl
 
 
-def run_transform(json_data: list[dict[str, Any]], LOG: logging.Logger) -> pl.DataFrame:
-    """Transform Pokémon JSON into a structured DataFrame.
+def run_transform(
+    json_data: dict[str, list[dict[str, Any]]],
+    LOG: logging.Logger | None = None,
+) -> pl.DataFrame:
+    """Transform validated Pokémon JSON into a structured DataFrame."""
 
-    Args:
-        json_data (list[dict[str, Any]]): Validated Pokémon records.
-        LOG (logging.Logger): Logger instance.
+    if LOG:
+        LOG.info("========================")
+        LOG.info("STAGE 03: TRANSFORM starting...")
+        LOG.info("========================")
 
-    Returns:
-        pl.DataFrame: Transformed Pokémon dataset.
-    """
-    LOG.info("========================")
-    LOG.info("STAGE 03: TRANSFORM starting...")
-    LOG.info("========================")
+    records: list[dict[str, Any]] = []
 
-    records = []
-    for record in json_data:
+    for record in json_data["results"]:
         records.append(
             {
-                "name": record.get("name"),
-                "url": record.get("url"),
+                "name": record["name"],
+                "id": record["id"],
+                "url": record["url"],
+                "types": ", ".join(record["types"]),  # combine types into a string
+                "height": record["height"],
+                "weight": record["weight"],
             }
         )
 
-    df = pl.DataFrame(records)
+    df: pl.DataFrame = pl.DataFrame(records)
 
     # Derived field: length of Pokémon name
     df = df.with_columns([pl.col("name").str.len_chars().alias("name_length")])
 
-    LOG.info("Transformation complete.")
-    LOG.info(f"DataFrame preview:\n{df.head()}")
-    LOG.info("Sink: Polars DataFrame created")
+    if LOG:
+        LOG.info("Transformation complete.")
+        LOG.info(f"DataFrame preview:\n{df.head()}")
+        LOG.info("Sink: Polars DataFrame created")
 
     return df
